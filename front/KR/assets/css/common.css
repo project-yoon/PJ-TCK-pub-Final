@@ -576,6 +576,8 @@ button.def-btn:hover,button.def-btn:focus,button.def-btn:active{background:#c707
     .btn{font-size:1rem !important;}
     .view-area{padding:60px 0;}
     .view-area .txt{padding-top:20px;}
+    .location-cont .info li span{max-width: 70px;}
+    .t-select .option-box{width: 100%; left: 0;}
     .footer .info-area .inner{height:380px;padding:30px 20px;}
     .footer .corp-area .inner{flex-direction:column;gap:10px;padding:24px 20px;}
     .footer .fnb li{margin-bottom:10px;}
