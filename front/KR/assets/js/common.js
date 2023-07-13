@@ -2,9 +2,6 @@ window.addEventListener('load', function () {
     let urlPageName = window.location.pathname.split("/").pop();
     let phoneNumberCheck = document.querySelector("input[type=tel]");
     let emailCheck = document.querySelector("input[type=email]");
-    let siteMapMenu = document.querySelector("#header .user-menu .site-menu");
-    let languageMenu = document.querySelector(".language-menu");
-    let userMenuSitemap = document.querySelector("#header .user-menu .btn-sitemap");
     let wrap = document.querySelector("#wrap");
 
     fileChange();
@@ -19,7 +16,7 @@ window.addEventListener('load', function () {
             wrap.style.overflow = 'visible';
         }
 
-        window.addEventListener('resize', function () {
+        window.addEventListener('resize', () => {
             if (matchMedia('all and (max-width: 1024px)').matches) {
                 wrap.style.overflow = 'hidden';
             } else {
@@ -31,12 +28,23 @@ window.addEventListener('load', function () {
     }
 
     if (urlPageName === 'history.html') {
-        if (matchMedia('all and (min-width: 1025px)').matches) {
+        if (matchMedia('all and (min-width: 917px)').matches) {
             wrap.style.overflow = 'visible';
         } else {
             wrap.style.overflow = 'hidden';
         }
     }
+
+    // 리사이징
+    window.addEventListener('resize', () => {
+        if (urlPageName === 'history.html') {
+            if (matchMedia('all and (min-width: 917px)').matches) {
+                wrap.style.overflow = 'visible';
+            } else {
+                wrap.style.overflow = 'hidden';
+            }
+        }
+    });
 
     if (phoneNumberCheck !== null) {
         phoneNumberCheck.addEventListener('keyup', (e) => {
@@ -54,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let scrollPageLeft;
     let isDown;
     $('.sub-navi > div').mousedown(function(e) {
-        let subNaviDivScrollLeft = $('.sub-navi > div').scrollLeft(); // 현재 스크롤 위치
+        let subNaviDivScrollLeft = $('.sub-navi > div').scrollLeft();
 
         e.preventDefault();
         localStorage.setItem('subMenuScrollMove', subNaviDivScrollLeft);

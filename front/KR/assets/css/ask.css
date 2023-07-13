@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*** ask 공통 ***/
+.ask .content{padding-top:15px;}
+.ask .ask-content{padding:100px 100px 50px 100px;border-radius:30px;box-shadow:5px 5px 30px rgba(0, 0, 0, 0.05);background:#fff;}
+.ask .title-area{text-align:center;}
+.ask .title-area h3{font-weight:600;font-size:2rem;color:#000;}
+.ask .title-area p{padding-top:20px;line-height:1.5;}
+.ask .form-content{min-height:auto;padding:40px 0 0;border-radius:30px;background-color:#fff;}
+.ask .form-content .btn-box{margin-top:45px;}
+
+/* txt-label */
+.customer .form-item .txt-label,.personal .form-item .txt-label,.redep .form-item .txt-label{position:absolute;left:0;top:0;min-width:145px;height:100%;padding:30px 0 27px 0;}
+
+/* personal */
+.personal .terms-section{margin-top:30px}
+.personal .certify-section{margin-top:60px;padding:34px 50px;background:#F5F5F5;}
+.personal .certify-section span{font-weight:600;font-size:1.125rem;}
+.personal .certify-section p{padding-top:14px;line-height:1.5;}
+.personal .form-item.t-attach{margin-top:45px;border-top:1px solid #E0E0E0;}
+
+/* staff */
+.staff .staff-content{margin-top:70px;}
+.staff .staff-box{display:flex;justify-content:space-between;gap:30px;padding:75px 0 66px;border-top:1px solid #000;}
+.staff .staff-box h4{flex:1 0 30%;font-weight:600;font-size:1.25rem;line-height:1.5;}
+.staff .staff-box .desc{width:935px;font-size:1.125rem;color:#727071;}
+.staff .staff-box .desc span{display:block;font-weight:600;}
+.staff .staff-box .desc span+p{padding-top:10px;}
+.staff .staff-box .desc p{line-height:1.55;}
+.staff .staff-box .desc p+span{padding-top:25px;}
+.staff .staff-box .desc ol{display:flex;flex-wrap:wrap;gap:20px;padding-top:20px;}
+.staff .staff-box .desc li{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;width:200px;height:200px;border-radius:50%;border:1px solid #E0E0E0;background:#fff;}
+.staff .staff-box .desc li em{color:#D0102C;}
+.staff .staff-box .desc li span{font-weight:600;font-size:1.125rem;color:#333333;}
+.staff .content-body .btn-box{text-align:center;}
+
+/* redep */
+.redep .form-item .check-box-list{display:flex;flex-wrap:wrap;gap:25px 20px;padding:30px 20px 28px 145px;border-bottom:1px solid #e0e0e0;}
+.redep .form-item .check-box{margin-top:0;font-weight:600;font-size:1.125rem;color:#727071;}
+.redep .form-item.t-attach{margin-top:50px;border-top:1px solid #E0E0E0;}
+.redep .form-group{display:flex;flex-wrap:wrap;gap:0 40px;padding:0 0 0 145px;}
+.redep .form-item .txt-label.line{border-bottom:1px solid #e0e0e0;}
+.redep .form-group .t-select{padding:0;}
+.redep .form-group .t-select .option-box{left:70px;width:calc( 100% - 70px );}
+.redep .form-group>div{display:flex;align-items:center;flex:calc( (100% - 40px) / 2 );}
+.redep .form-group>div label{line-height:1;min-width:95px;color:#727071;}
+.redep .form-group .form-item>input{padding:30px 20px 27px 90px;}
+.redep .form-group .form-item>input::before{content:'';display:block;width:145px;height:1px;background:#e0e0e0;}
+
+@media all and (max-width:1200px){
+    .redep .form-group .t-select .option-box{width:100%;left:0;}
+    .ask .ask-content{padding:60px 60px 60px 60px;}
+    .ask .form-content{padding:50px 0 0;}
+    .ask .title-area h3{font-size:1.75rem;}
+    .personal .certify-section span{font-size:1rem;}
+    .personal .certify-section p{font-size:0.875rem;}
+    .staff .staff-box h4{font-size:1.125rem;}
+    .staff .staff-box .desc p{font-size:1rem;}
+}
+@media all and (max-width:799px){
+    .ask .form-content{padding:35px 0 0;}
+    .ask .ask-content{padding:50px 30px 50px 20px;}
+    .staff .staff-content{margin-top:35px;}
+    .staff .staff-box .desc li{width:150px;height:150px;}
+    .personal .certify-section{margin-top:40px;padding:20px 30px;}
+    .personal .form-item>input{padding:30px 20px 26px 85px;}
+    .staff .form-item>input{padding:30px 20px 26px 85px !important;}
+    .redep .form-group{padding:0 0 0 110px;}
+    .ask .content{padding:15px 0 120px 0;}
+    .staff .staff-box{display:block;padding:35px 0;}
+    .staff .staff-box h4{margin-bottom:25px;}
+    .staff .staff-box .desc{width:100%;}
+    .staff .staff-box .desc li{width:130px;height:130px;}
+    .redep .form-item .txt-label.singularity-name{position:unset;min-width:100%;}
+    .redep .form-item .check-box-list{padding:0 20px 31px 0px !important;}
+    .redep .form-group{display:block;padding:0;}
+    .redep .form-item .txt-label.line{border-bottom:none;}
+    .singularity label{position:unset !important;transform:unset !important;line-height:4 !important;}
+    .singularity-single{position:unset !important;transform:unset !important;line-height:4 !important;padding:0 !important;}
+    .singularity input{padding:0 20px 10px 0;}
+}
