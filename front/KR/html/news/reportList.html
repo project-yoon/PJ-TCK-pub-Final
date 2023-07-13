@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REPORTLIST | NEWS | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/news.css"><!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+        <!-- [D] 별도 호출 -->
+        <!-- <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css"> -->
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+        <script src="../../assets/js/gsap.min.js"></script>
+        <script src="../../assets/js/ScrollTrigger.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="kr">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+            <!-- //skip-navi -->
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>뉴스</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="newsList.html">뉴스센터</a></li>
+                            <li><a href="reportList.html" class="active">홍보자료</a></li>
+                            <li><a href="sns.html">SNS</a></li>
+                            <li><a href="noticeList.html">공지사항</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- //sub-navi -->
+
+            <!-- container -->
+            <main id="container" class="container news report-list">
+                <!-- visual -->
+                <div class="content visual">
+                    <div class="visual-img">
+                        <span class="sr-only">메인 이미지 입니다.</span>
+                    </div>
+                    <div class="inner">
+                        <h3>우리만의 우수한 가치를 소개하는 <br>홍보자료</h3>
+                        <p>다양한 소식과 이야기가 담긴<br>자랑스런 트랜스코스모스코리아의 활동을 소개합니다.</p>
+                    </div>
+                </div>
+                <!-- //visual -->
+
+                <!-- content -->
+                <div class="content">
+                    <div class="inner">
+                        <div class="content-body">
+                            <div class="tab-container tab t-circle">
+                                <div class="head-area">
+                                    <ul class="tab-list" role="tablist">
+                                        <li class="tab-item active" role="presentation">
+                                            <a href="#tab1" id="tab1-tab" class="tab-link" role="tab" aria-controls="tab1" aria-selected="true">전체</a>
+                                        </li>
+                                        <li class="tab-item" role="presentation">
+                                            <a href="#tab2" id="tab2-tab" class="tab-link" role="tab" aria-controls="tab2" aria-selected="false">기업정보</a>
+                                        </li>
+                                        <li class="tab-item" role="presentation">
+                                            <a href="#tab3" id="tab3-tab" class="tab-link" role="tab" aria-controls="tab3" aria-selected="false">사업정보</a>
+                                        </li>
+                                    </ul>
+                                    <form class="ui-form">
+                                        <div class="form-input">
+                                            <input type="text" title="" class="form-set">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- //tab-area -->
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" aria-labelledby="tab1-tab">
+                                        <table class="board t-line t-dwl">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width: 16.5%" class="mo-hidden">
+                                                <col>
+                                                <col style="width: 16.5%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">
+                                                            제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.제목이 최대
+                                                            1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.
+                                                        </p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                                <tr class="board-item">
+                                                    <td class="cell mo-hidden">
+                                                        <span class="sub-txt">기업정보</span>
+                                                    </td>
+                                                    <td class="cell cent">
+                                                        <span class="sub-txt mo-visible">보도자료</span>
+                                                        <p class="tit">제목이 최대 1줄까지 노출됩니다. 1줄이후로는 ...처리 됩니다.</p>
+                                                        <span class="date">2023. 03. 31</span>
+                                                    </td>
+                                                    <td class="cell">
+                                                        <button type="button" class="btn t-dwload02 b-round" aria-label="다운로드"></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" aria-labelledby="tab2-tab">
+                                        <div class="board t-line b-line">
+                                            <div class="none-content">
+                                                <i class="ico-none"><span class="sr-only">콘텐츠없는 아이콘</span></i>
+                                                <p>검색하신 <span>“OOOOO”</span>에 대한 검색 결과가 없습니다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" aria-labelledby="tab3-tab">
+                                        <p>탭 3의 내용</p>
+                                    </div>
+                                </div>
+                                <!-- //tab-content -->
+                            </div>
+                            <div class="pagination">
+                                <button class="btn prev disabled">
+                                    <span class="sr-only">이전</span>
+                                </button>
+                                <ul class="paging">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                </ul>
+                                <button class="btn next">
+                                    <span class="sr-only">다음</span>
+                                </button>
+                            </div>
+                            <!-- //pagination -->
+                        </div>
+                        <!-- //content-body -->
+                    </div>
+                </div>
+                <!-- //content -->
+            </main>
+            <!-- // container -->
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+        <script>
+            // 로딩 시 스크롤 초기화
+            ScrollTrigger.clearScrollMemory();
+            window.history.scrollRestoration = "manual";
+            document.addEventListener("DOMContentLoaded", () => {
+                bgMotion();
+                // newsSwiper();
+            });
+
+            function bgMotion() {
+                let bgMotion = document.querySelector(".visual-img");
+                gsap.to(bgMotion, {
+                    duration: 1.5,
+                    scale: 1,
+                });
+
+                let content = document.querySelectorAll(".content");
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: content[1],
+                        start: "5% top",
+                        end: "bottom center",
+                        toggleActions: "play none none none",
+                    },
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REDEP | ASK | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/ask.css"> <!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="kr">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+            <!-- //skip-navi -->
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>고객지원</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="customer.html">사업문의</a></li>
+                            <li><a href="personal01.html">인사문의</a></li>
+                            <li><a href="staff01.html">직원의 소리</a></li>
+                            <li><a href="redep.html" class="active">전환배치 신청</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- //sub-navi -->
+
+            <!-- container -->
+            <main id="container" class="container ask redep">
+                <div class="content">
+                    <div class="inner">
+                        <div class="ask-content">
+                            <div class="content-head">
+                                <div class="title-area">
+                                    <h3>전환배치 신청</h3>
+                                    <p>역량을 최대한 펼칠 수 있는 직군으로 이동할 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="form-content">
+                                    <div class="form-section">
+                                        <div class="form-item vital">
+                                            <label for="iqUserName">이름</label>
+                                            <input type="text" id="iqUserName" class="form-input" placeholder="이름을 입력해 주세요" name="필수입력 이름">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqNumber">사번</label>
+                                            <input type="text" id="iqNumber" placeholder="사번을 입력해 주세요" name="필수입력 사번">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqBirth">생년월일</label>
+                                            <input type="text" id="iqBirth" placeholder="생년월일을 입력해 주세요" name="필수입력 생년월일">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqContact">연락처</label>
+                                            <input type="tel" id="iqContact" class="form-input" value="" maxlength="13" placeholder="연락처를 입력해 주세요(-제외)" name="필수입력 연락처">
+                                        </div>
+                                        <div class="form-item vital full">
+                                            <label for="iqMail">이메일</label>
+                                            <input type="email" id="iqMail" class="form-input" value="" placeholder="이메일을 입력해 주세요(example@mail.com)" name="필수입력 이메일">
+                                        </div>
+                                        <div class="form-item t-checkbox full">
+                                            <p class="txt-label singularity-name">관심 사업부문</p>
+                                            <ul class="check-box-list">
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness01">
+                                                    <label for="iqBusiness01"><span>CC사업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness02">
+                                                    <label for="iqBusiness02"><span>WI사업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness03">
+                                                    <label for="iqBusiness03"><span>DML사업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness04">
+                                                    <label for="iqBusiness04"><span>FS사업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness05">
+                                                    <label for="iqBusiness05"><span>DS사업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness06">
+                                                    <label for="iqBusiness06"><span>IT지원</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness07">
+                                                    <label for="iqBusiness07"><span>영업</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness08">
+                                                    <label for="iqBusiness08"><span>경영지원/관리</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqBusiness09">
+                                                    <label for="iqBusiness09"><span>기타</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-item t-checkbox full vital">
+                                            <p class="txt-label singularity-name">관심 직무</p>
+                                            <ul class="check-box-list">
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob01">
+                                                    <label for="iqJob01"><span>상담직</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob02">
+                                                    <label for="iqJob02"><span>웹디자인</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob03">
+                                                    <label for="iqJob03"><span>광고디자인</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob04">
+                                                    <label for="iqJob04"><span>기계기술직</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob05">
+                                                    <label for="iqJob05"><span>잡매니저</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob06">
+                                                    <label for="iqJob06"><span>IT기획</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob07">
+                                                    <label for="iqJob07"><span>기술개발</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob08">
+                                                    <label for="iqJob08"><span>정보보안</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob09">
+                                                    <label for="iqJob09"><span>경영관리/기획</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob10">
+                                                    <label for="iqJob10"><span>운영분석</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob11">
+                                                    <label for="iqJob11"><span>채용</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob12">
+                                                    <label for="iqJob12"><span>교육</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob13">
+                                                    <label for="iqJob13"><span>인사</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob14">
+                                                    <label for="iqJob14"><span>총무</span></label>
+                                                </li>
+                                                <li class="check-box">
+                                                    <input type="checkbox" id="iqJob15">
+                                                    <label for="iqJob15"><span>재무/자금</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-item full">
+                                            <p class="txt-label line singularity-single">어학 능력</p>
+                                            <div class="form-group">
+                                                <div class="form-select t-select">
+                                                    <label for="dropdwSeach1">영어</label>
+                                                    <input type="button" value="어학 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach1" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-select t-select">
+                                                    <label for="dropdwSeach2">일본어</label>
+                                                    <input type="button" value="어학 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach2" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach2" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="iqLanguage">기타</label>
+                                                    <input type="text" id="iqDepartment" class="form-input" placeholder="언어를 입력해 주세요" name="기타">
+                                                </div>
+                                                <div class="form-select t-select">
+                                                    <input type="button" value="어학 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach1" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item full">
+                                            <p class="txt-label line singularity-single">오피스 능력</p>
+                                            <div class="form-group">
+                                                <div class="form-select t-select">
+                                                    <label for="dropdwSeach1">엑셀함수</label>
+                                                    <input type="button" value="오피스 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach1" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-select t-select">
+                                                    <label for="dropdwSeach1">PPT/워드</label>
+                                                    <input type="button" value="오피스 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach1" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="iqOffice">기타</label>
+                                                    <input type="text" id="iqOffice" class="form-input" placeholder="오피스 능력을 입력해 주세요" name="기타">
+                                                </div>
+                                                <div class="form-select t-select">
+                                                    <input type="button" value="오피스 능력을 선택해 주세요" class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false">
+                                                    <div id="dropdwSeach1" class="option-box">
+                                                        <ul role="listbox">
+                                                            <li role="option"><a href="">상</a></li>
+                                                            <li role="option"><a href="">중</a></li>
+                                                            <li role="option"><a href="">하</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item full singularity form-text-long">
+                                            <label for="iqDepartment">구체적 희망부서</label>
+                                            <input type="text" id="iqDepartment" class="form-input" placeholder="구체적 희망부서를 입력해 주세요 (선택)" name="구체적 희망부서">
+                                        </div>
+                                        <div class="form-item t-txtbox vital">
+                                            <label for="iqReason">전환배치<br>희망사유</label>
+                                            <textarea id="iqReason" cols="30" rows="8" placeholder="전환배치 희망사유를 입력해 주세요" name="필수입력 전환배치 희망사유"></textarea>
+                                        </div>
+                                        <div class="form-item t-txtbox">
+                                            <label for="iqAdvantage">본인의 강점</label>
+                                            <textarea id="iqAdvantage" cols="30" rows="8" placeholder="본인의 강점을 입력해 주세요" name="본인의 강점"></textarea>
+                                        </div>
+                                        <div class="form-alert is-info">
+                                            <p>본 신청서에 대한 개별 피드백은 즉시 진행되지 않습니다.</p>
+                                            <p>접수된 신청서에 대해 인사팀 관리자가 집계/관리하며 관심직무/희망부서에 TO발생 시 우선적으로 검토 후 개별 연락드립니다.</p>
+                                        </div>
+                                        <div class="form-item t-attach">
+                                            <label for="iqAttachment">첨부파일</label>
+                                            <input id="iqAttachment" placeholder="첨부된 파일이 없습니다" name="첨부파일" disabled>
+                                            <label for="iqfileBtn" role="button">
+                                                <span>파일선택</span>
+                                                <input type="file" id="iqfileBtn" class="sr-only" name="파일선택">
+                                            </label>
+                                        </div>
+                                        <div class="form-alert is-errored">
+                                            <p>첨부파일은 최대 10MB까지 등록 가능하며, 파일 형식은 zip, pdf, hwp, ppt, pptx, doc, docx, xls, xlsx, jpg, jpeg, png, gif 만 가능합니다</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="terms-section">
+                                        <div class="terms-item vital">
+                                            <p class="txt-label">개인정보 수집 및 이용동의</p>
+                                            <div class="terms-box">
+                                                <ol>
+                                                    <li>
+                                                        1. 수집하는 개인정보의 항목
+                                                        <ol class="list-depth t-num">
+                                                            <li>
+                                                                1.1 수집하는 개인정보 항목
+                                                                <ol class="list-depth t-bar">
+                                                                    <li>- 필수항목 : 성명, 휴대폰번호</li>
+                                                                    <li>- 선택항목 : 이메일</li>
+                                                                    <li>- 자동으로 수집될 수 있는 정보 &#40;부적절한 접근 시&#41; : IP, 접속시간, 쿠키, 브라우저 종류 및 OS</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="check-box">
+                                                <input type="checkbox" id="iqCheck01">
+                                                <label for="iqCheck01"><span>개인정보 수집 및 이용에 동의합니다</span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn b-round def">보내기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- // container -->
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+    </body>
+</html>

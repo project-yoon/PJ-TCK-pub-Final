@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CUSTOMER | ASK | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/ask.css"> <!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="kr">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+            <!-- //skip-navi -->
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>고객지원</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="customer.html" class="active">사업문의</a></li>
+                            <li><a href="personal01.html">인사문의</a></li>
+                            <li><a href="staff01.html">직원의 소리</a></li>
+                            <li><a href="redep.html">전환배치 신청</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- //sub-navi -->
+
+            <!-- container -->
+            <main id="container" class="container ask customer">
+                <div class="content">
+                    <div class="inner">
+                        <div class="ask-content">
+                            <div class="content-head">
+                                <div class="title-area">
+                                    <h3>사업문의</h3>
+                                    <p>문의 유형을 선택하시면 더 빠르게 상담받을 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="content-body">
+                                <div class="form-content">
+                                    <div class="form-section">
+                                        <div class="form-item vital">
+                                            <p class="txt-label">문의유형</p>
+                                            <div class="form-select t-select">
+                                                <input type="button" value="문의 유형을 선택해 주세요." class="select" aria-controls="dropdwSeach1" aria-haspopup="listbox" aria-expanded="false" name="필수선택 문의유형">
+                                                <div id="dropdwSeach1" class="option-box">
+                                                    <ul role="listbox">
+                                                        <li role="option"><a href="">AI&IT 솔루션</a></li>
+                                                        <li role="option"><a href="">CX</a></li>
+                                                        <li role="option"><a href="">필드서비스</a></li>
+                                                        <li role="option"><a href="">백오피스</a></li>
+                                                        <li role="option"><a href="">다이렉트메일</a></li>
+                                                        <li role="option"><a href="">EC/DX</a></li>
+                                                        <li role="option"><a href="">컨설팅</a></li>
+                                                        <li role="option"><a href="">교육</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqTitle">제목</label>
+                                            <input type="text" id="iqTitle" class="form-input" placeholder="제목을 입력해 주세요" name="필수입력 제목">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqUserName">이름</label>
+                                            <input type="text" id="iqUserName" class="form-input" placeholder="이름을 입력해 주세요" name="필수입력 이름">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqContact">연락처</label>
+                                            <input type="tel" id="iqContact" class="form-input" value="" maxlength="13" placeholder="연락처를 입력해 주세요(-제외)" name="필수입력 연락처">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqMail">이메일</label>
+                                            <input type="email" id="iqMail" class="form-input" value="" placeholder="이메일을 입력해 주세요(example@mail.com)" name="필수입력 이메일">
+                                        </div>
+                                        <div class="form-item vital">
+                                            <label for="iqCompany">회사명</label>
+                                            <input type="text" id="iqCompany" class="form-input" placeholder="회사명을 입력해 주세요" name="필수입력 회사명">
+                                        </div>
+                                        <div class="form-item t-txtbox vital">
+                                            <label for="iqDetail">문의내용</label>
+                                            <textarea id="iqDetail" cols="30" rows="8" placeholder="문의내용을 입력해 주세요" name="필수입력 문의내용"></textarea>
+                                        </div>
+                                        <div class="form-item t-attach">
+                                            <label for="iqAttachment">첨부파일</label>
+                                            <input id="iqAttachment" placeholder="첨부된 파일이 없습니다" name="첨부파일" disabled>
+                                            <label for="iqfileBtn" role="button">
+                                                <span>파일선택</span>
+                                                <input type="file" id="iqfileBtn" class="sr-only" name="파일선택">
+                                            </label>
+                                        </div>
+                                        <div class="form-alert is-errored">
+                                            <p>첨부파일은 최대 10MB까지 등록 가능하며, 파일 형식은 zip, pdf, hwp, ppt, pptx, doc, docx, xls, xlsx, jpg, jpeg, png, gif 만 가능합니다</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="terms-section">
+                                        <div class="terms-item vital">
+                                            <p class="txt-label">개인정보 수집 및 이용동의</p>
+                                            <div class="terms-box">
+                                                <ol>
+                                                    <li>
+                                                        1. 수집하는 개인정보의 항목
+                                                        <ol class="list-depth t-num">
+                                                            <li>
+                                                                1.1 수집하는 개인정보 항목
+                                                                <ol class="list-depth t-bar">
+                                                                    <li>- 필수항목 : 성명, 휴대폰번호</li>
+                                                                    <li>- 선택항목 : 이메일</li>
+                                                                    <li>- 자동으로 수집될 수 있는 정보 &#40;부적절한 접근 시&#41; : IP, 접속시간, 쿠키, 브라우저 종류 및 OS</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                1.2 개인정보 수집방법
+                                                                <ol>
+                                                                    <li>- TCK 홈페이지 사업문의 메뉴</li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="check-box">
+                                                <input type="checkbox" id="iqCheck01">
+                                                <label for="iqCheck01"><span>개인정보 수집 및 이용에 동의합니다</span> </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn b-round def">보내기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- // container -->
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+    </body>
+</html>
