@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POPUP | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/etc.css">
+        <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+        <!-- {해당 파일 CSS} -->
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="jp">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>뉴스</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="newsList.html" class="active">뉴스센터</a></li>
+                            <li><a href="reportList.html">홍보자료</a></li>
+                            <li><a href="sns.html">SNS</a></li>
+                            <li><a href="noticeList.html">공지사항</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- container -->
+            <main id="container" class="container news detail-view">
+                <div class="content">
+                    <div class="inner">
+                        <div class="tab-container tab t-circle">
+                            <div class="head-area">
+                                <ul class="tab-list" role="tablist">
+                                    <li class="tab-item active" role="presentation">
+                                        <a href="#tab1" id="tab1-tab" class="tab-link" role="tab" aria-controls="tab1" aria-selected="true">전체</a>
+                                    </li>
+                                    <li class="tab-item" role="presentation">
+                                        <a href="#tab2" id="tab2-tab" class="tab-link" role="tab" aria-controls="tab2" aria-selected="false">보도자료</a>
+                                    </li>
+                                    <li class="tab-item" role="presentation">
+                                        <a href="#tab3" id="tab3-tab" class="tab-link" role="tab" aria-controls="tab3" aria-selected="false">사내소식</a>
+                                    </li>
+                                </ul>
+                                <div class="form-select-group">
+                                    <form class="ui-form">
+                                        <div class="form-select t-search">
+                                            <button type="button" class="select" aria-controls="dropdwSeach" aria-haspopup="listbox" aria-expanded="false">전체</button>
+                                            <div id="dropdwSeach" class="option-box">
+                                                <ul role="listbox">
+                                                    <li role="option"><a href="#">전체</a></li>
+                                                    <li role="option"><a href="#">drop1</a></li>
+                                                    <li role="option"><a href="#">drop2</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-input">
+                                            <input type="text" title="" class="form-set">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- //head-area -->
+                            <div class="tab-content">
+                                <div id="tab1" class="tab-pane active" role="tabpanel" aria-labelledby="tab1-tab">
+                                    <div class="board t-line b-line" style="height: 500px">
+                                        <!-- // style="height: 500px;" 임시 적용-->
+                                        <button type="button" id="popupBtn1" class="btn b-round def">스와이퍼 팝업</button>
+                                        <button type="button" id="popupBtn2" class="btn b-round def">이메일 무단 수집 거부 팝업</button>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab-pane" role="tabpanel" aria-labelledby="tab2-tab">
+                                    <div class="board t-line b-line">
+                                        <div class="none-content">
+                                            <i class="ico-none"><span class="sr-only">콘텐츠없는 아이콘</span></i>
+                                            <p><span>「OOOOO」</span>の検索結果はありません。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab-pane" role="tabpanel" aria-labelledby="tab3-tab">
+                                    <!-- // style="height: 500px;" 임시 적용-->
+                                    <div class="board t-line b-line" style="height: 500px">
+                                        <p>탭 3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+            
+            <!-- popup -->
+            <!-- 슬라이드 팝업 -->
+            <div class="popup-container popup-container-1">
+                <div class="popup-content t-img">
+                    <div class="swiper-container swiper popup-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../../assets/images/tmp_popup01.png" alt="팝업이미지1">
+                                    <span>GRAND OPEN</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../../assets/images/tmp_popup01.png" alt="팝업이미지2">
+                                    <span>GRAND OPEN</span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../../assets/images/tmp_popup01.png" alt="팝업이미지3">
+                                    <span>GRAND OPEN</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="popup-foot">
+                        <a href="#" class="btn-close today-close">今日はこれ以上見ない</a>
+                    </div>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="btnLayerClose(1);"><span class="sr-only">閉じる</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 텍스트 팝업 -->
+            <div class="popup-container popup-container-2">
+                <div class="popup-content popup-content-2">
+                    <div class="txt-box">
+                        <span class="tit">メールの無断収集拒否</span>
+                        <p>
+                            本ウェブサイトに掲載されたメールアドレスが、電子メール収集プログラムやその他の技術的装置を利用し無断で収集されることを拒否します。これに違反した場合、情報通信網法によって処罰されることがあります。
+                        </p>
+                    </div>
+                    <!--  텍스트 팝업에서 쿠키제어 사용 위치 
+                    <div class="popup-foot">
+                        <a href="#" class="btn-close today-close">오늘 하루 보지않기</a>
+                    </div>
+                    -->
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose" onclick="btnLayerClose(2);"><span class="sr-only">閉じる</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let scrollLock = "scroll-lock";
+            let bodyTarget = $("body");
+
+            const popupSwiper = new Swiper(".popup-slide", {
+                direction: "horizontal",
+                slidesPerView: 1,
+                spaceBetween: 0,
+                debugger: true,
+                mousewheel: true,
+                loop: true,
+                centeredSlides: true,
+                // autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                // },
+                pagination: {
+                    el: ".popup-slide .swiper-pagination",
+                    clickable: true,
+                },
+            });
+            $("#popupBtn1").click(function () {
+                // 슬라이드 팝업 호출
+                popupSwiper.slideTo(0);
+                $(".popup-container-1").fadeIn();
+                bodyTarget.addClass(scrollLock);
+            });
+
+            $("#popupBtn2").click(function () {
+                // 텍스트 팝업 호출
+                $(".popup-container-2").fadeIn();
+                bodyTarget.addClass(scrollLock);
+            });
+
+            // $(document).mouseup(function (e) { // 외부 영역 클릭 시 팝업 닫기
+            //     if ($('.popup-container').has(e.target).length === 0) {
+            //         $('.popup-container').fadeOut();
+            //         bodyTarget.removeClass(scrollLock);
+            //     }
+            // });
+
+            function btnLayerClose(num) {
+                // 팝업 닫기
+                if (num === 1) {
+                    $(".popup-container-1").fadeOut();
+                    bodyTarget.removeClass(scrollLock);
+                } else if (num === 2) {
+                    $(".popup-container-2").fadeOut();
+                    bodyTarget.removeClass(scrollLock);
+                } else {
+                    $(".popup-container").fadeOut();
+                    bodyTarget.removeClass(scrollLock);
+                }
+            }
+
+            // 오늘 하루 보지 않기 쿠키
+            function toggleMainPopup() {
+                const handleCookie = {
+                    setCookie: function (name, val, exp) {
+                        const date = new Date();
+
+                        date.setTime(date.getTime() + exp * 24 * 60 * 60 * 1000);
+                        document.cookie = name + "=" + val + ";expires=" + date.toUTCString() + ";";
+                    },
+                    getCookie: function (name) {
+                        const value = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+
+                        return value ? value[2] : null;
+                    },
+                };
+
+                if (handleCookie.getCookie("today") == "y") {
+                    $(".popup-container-1").fadeOut();
+                    $(".popup-container-1").css("display", "none");
+                } else {
+                    $(".popup-container-1").fadeIn();
+                }
+
+                $(".popup-container-1").on("click", ".today-close", function () {
+                    handleCookie.setCookie("today", "y", 1);
+                    $(".popup-container-1").fadeOut();
+                });
+            }
+
+            toggleMainPopup();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HISTORY | COMPANY | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/company.css"><!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+        <!-- [D] 별도 호출 -->
+        <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+        <script src="../../assets/js/gsap.min.js"></script>
+        <script src="../../assets/js/ScrollTrigger.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="en">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>Who We Are</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="overview.html">Company Overview</a></li>
+                            <li><a href="ceo.html">CEO’s Message</a></li>
+                            <li><a href="history.html" class="active">History &amp; Recognitions · Awards</a></li>
+                            <li><a href="clients.html">Our Clients</a></li>
+                            <li><a href="ci.html">Our CI</a></li>
+                            <li><a href="location.html">Our Locations</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- container -->
+            <main id="container" class="container company history">
+                <!-- visual -->
+                <div class="content visual">
+                    <div class="visual-img"><span class="sr-only">메인 이미지 입니다.</span></div>
+                    <div class="inner">
+                        <h3>Demonstrating Growth and Proficiency<br>History &amp; Recognitions · Certificates</h3>
+                        <p>We sculpt a legacy of pride and success <br>through the pursuit of innovation and sustained growth.</p>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="content">
+                    <div class="inner">
+                        <div class="content-body">
+                            <div class="tab-container tab t-bar">
+                                <div class="pc-tab-menu">
+                                    <ul class="tab-list" role="tablist">
+                                        <li class="tab-item active" role="presentation">
+                                            <a href="#tab1" id="tab1-tab" class="tab-link" role="tab" aria-controls="tab1" aria-selected="true">History</a>
+                                        </li>
+                                        <li class="tab-item" role="presentation">
+                                            <a href="#tab2" id="tab2-tab" class="tab-link" role="tab" aria-controls="tab2" aria-selected="false">Recognitions · Certificates</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="m-tab-menu">
+                                    <button class="m-tab-menu-defalut">History</button>
+                                    <ul>
+                                        <li><button type="button" value="#tab1">History</button></li>
+                                        <li><button type="button" value="#tab2">Recognitions · Certificates</button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="cont scrollMotion">
+                                        <div id="tab1" class="tab-contents tab-pane active" role="tabpanel" aria-labelledby="tab1-tab">
+                                            <div class="tit-group m-tit01 title-area">
+                                                <h4>Pioneering <br>the Future Through <br>Novel Ventures</h4>
+                                                <div class="years-area">
+                                                    <span class="years"><span class="years-front-data">20</span><em>22</em><span>'s</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="history-cont">
+                                                <div class="history-area">
+                                                    <div class="year-group hide">
+                                                        <!-- [D] .year : 좌측 10년 단위 구간 -->
+                                                        <h5 class="year" data-index="20">20<em>20</em></h5>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="20">20<em>22</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">12</span>
+                                                                <p>Establishment of Gwangju/Daejeon site in progress</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Preparing for ITSM business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="20">20<em>21</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">01</span>
+                                                                <p>Headquarters relocation &#40;FKI Tower&#41;</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="20">20<em>20</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">12</span>
+                                                                <p>Designated as the official agency for Kakaowork</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Expansion of IT development services business</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of ITO service desk business</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of Video CS solution</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of mobile survey business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group hide">
+                                                        <h5 class="year" data-index="10">20<em>10</em></h5>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>19</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">08</span>
+                                                                <p>Designated as the official agency for Kakao i Chatbot</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">08</span>
+                                                                <p>Launch of Visual ARS solution</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">01</span>
+                                                                <p>Establishment of 2nd Busan site</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">01</span>
+                                                                <p>Launch of RPA business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>18</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of Back-office business</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">01</span>
+                                                                <p>Launch of consulting business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>17</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of education consulting business &#40;education, QC, and CC operation diagnostics&#41;</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">04</span>
+                                                                <p>Designated as an official dealer of Kakao Chat Support</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>16</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">02</span>
+                                                                <p>Acquisition of PCI DSS Certification &#40;the first amongst Korean contact centers&#41;</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>15</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">05</span>
+                                                                <p>Inauguration of the Namyoung site and relocation of the headquarters</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>13</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">08</span>
+                                                                <p>Launch of E-Commerce business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>12</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">05</span>
+                                                                <p>Launch of Digital Marketing business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>11</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">12</span>
+                                                                <p>Acquisition of DML ISO27001 Certification &#40;the first in the Korean BPO industry&#41;</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">10</span>
+                                                                <p>Launch of Field Service business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="10">20<em>10</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">10</span>
+                                                                <p>Implementation of COMPAS Certification &#40;a substitute for M company's COPC global certificate&#41;</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group hide">
+                                                        <!-- [D] .year : 좌측 10년 단위 구간 -->
+                                                        <h5 class="year" data-index="00">20<em>00</em></h5>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="00">20<em>09</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">08</span>
+                                                                <p>Company name transition to "transcosmos Korea"</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="00">20<em>08</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Establishment of Seongnam site</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Acquisition of ISO27001 Certification &#40;the first amongst Korean contact centers&#41;</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">06</span>
+                                                                <p>Launch of Direct Mail business</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="00">20<em>07</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">07</span>
+                                                                <p>Acquisition of KISA – ISMS Certification &#40;the first in the Korean BPO industry&#41;</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="00">20<em>03</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">11</span>
+                                                                <p>Acquisition of COPC 2000® Certification &#40;the first in the Korean BPO industry&#41;</p>
+                                                            </li>
+                                                            <li>
+                                                                <span class="month">04</span>
+                                                                <p>Establishment of Busan site</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="00">20<em>01</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">05</span>
+                                                                <p>Establishment of TCI joint venture, split-off to CIC Korea</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="year-group hide">
+                                                        <!-- [D] .year : 좌측 10년 단위 구간 -->
+                                                        <h5 class="year" data-index="90">19<em>90</em></h5>
+                                                    </div>
+                                                    <div class="year-group">
+                                                        <h5 class="year" data-index="90">19<em>90</em></h5>
+                                                        <ul>
+                                                            <li>
+                                                                <span class="month">01</span>
+                                                                <p>Initiation of operations for Daecom Customer Center</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cont scrollMotion">
+                                        <!-- 230616 구본용 : 내용 수급 중입니다. -->
+                                        <div id="tab2" class="tab-contents tab-pane" role="tabpanel" aria-labelledby="tab2-tab">
+                                            <div class="tit-group m-tit01 title-area">
+                                                <h4>Evolving into a GLOBAL NO.1 <br class="el-hidden">Enterprise Through Steady Growth</h4>
+                                            </div>
+                                            <div class="sub-tab-wrap tab t-circle">
+                                                <ul class="sub-tabs" role="tablist">
+                                                    <li class="sub-tab-item">
+                                                        <a href="#sub1" id="sub-tab1" role="tab" aria-controls="sub1">Total</a>
+                                                    </li>
+                                                    <li class="sub-tab-item">
+                                                        <a href="#sub2" id="sub-tab2" role="tab" aria-controls="sub2">Recognitions</a>
+                                                    </li>
+                                                    <li class="sub-tab-item">
+                                                        <a href="#sub3" id="sub-tab3" role="tab" aria-controls="sub3">Certificates</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="sub-content">
+                                                    <div id="sub1" class="sub-tab-pane" role="tabpanel" aria-labelledby="sub-tab1">
+                                                        <ul class="board t-news expand">
+                                                            <li class="board-item">
+                                                                <figure class="imgbox">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Certificates</span>
+                                                                    <p class="news-tit">
+                                                                        트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="http://placehold.it/200x600" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">인증받은 내용 입력</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="http://placehold.it/420x100" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="http://placehold.it/100x100" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Certificates</span>
+                                                                    <p class="news-tit">
+                                                                        트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고트랜스코스모스코리아, 제22기 결산공고
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">인증받은 내용 입력</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="board-item">
+                                                                <figure class="img-box">
+                                                                    <img src="../../assets/images/tmp_board01_vertical.png" alt="">
+                                                                </figure>
+                                                                <div class="inner">
+                                                                    <span class="sub-txt">Recognitions</span>
+                                                                    <p class="news-tit">트랜스코스모스코리아, 제22기 결산공고</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="sub2" class="sub-tab-pane" role="tabpanel" aria-labelledby="sub-tab2">
+                                                        <p>sub content2</p>
+                                                    </div>
+                                                    <div id="sub3" class="sub-tab-pane" role="tabpanel" aria-labelledby="sub-tab3">
+                                                        <p>sub content3</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn more">View More</button>
+                                            </div>
+                                        </div>
+                                        <!-- //230616 구본용 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+        <script>
+            // 로딩 시 스크롤 초기화
+            ScrollTrigger.clearScrollMemory();
+            window.history.scrollRestoration = "manual";
+            document.addEventListener("DOMContentLoaded", () => {
+                bgMotion();
+                scrollMotionTrigger();
+                historyMotion();
+                tabMotion();
+            });
+
+            function scrollMotionTrigger() {
+                if ($(".scrollMotion").length > 0 || $(".scrollMotion2").length > 0) {
+                    $(".scrollMotion:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "top 83%",
+                                end: "bottom center",
+                                toggleClass: { targets: $(".scrollMotion:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                // markers: true,
+                            },
+                        });
+                    });
+
+                    $(".scrollMotion2:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "center 100%",
+                                end: "bottom top",
+                                toggleClass: { targets: $(".scrollMotion2:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                // markers: true,
+                            },
+                        });
+                    });
+                }
+            }
+
+            function tabMotion() {
+                let tabItem = document.querySelectorAll(".tab-item");
+                tabItem.forEach((tab, idx) => {
+                    tab.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        scrollMotionTrigger();
+                    });
+                });
+            }
+
+            function bgMotion() {
+                let bgMotion = document.querySelector(".visual-img");
+                gsap.to(bgMotion, {
+                    duration: 1.5,
+                    scale: 1,
+                });
+
+                let content = document.querySelectorAll(".content");
+
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: content[1],
+                        start: "5% top",
+                        end: "bottom center",
+                        toggleActions: "play none none none",
+                    },
+                });
+            }
+
+            function historyMotion() {
+                let stickyElem = document.querySelector(".history-area");
+                let years = document.querySelector(".years > em");
+                let elements = document.querySelectorAll(".year-group");
+                let currentYearIndex = 0;
+
+                years.innerHTML = "00";
+
+                elements.forEach((element, index) => {
+                    gsap.to(element, {
+                        duration: 20,
+                        scrollTrigger: {
+                            trigger: element,
+                            start: "top 40%",
+                            end: "bottom 50% ",
+                            scrub: 1,
+                            // markers: {
+                            //     startColor: "red",
+                            //     endColor: "green",
+                            // },
+
+                            onEnter: function () {
+                                // 현재 년도 인덱스 업데이트
+                                currentYearIndex = index;
+
+                                // 텍스트 업데이트
+                                years.innerHTML = elements[currentYearIndex].querySelector(".year[data-index]").getAttribute("data-index");
+
+                                // 1999년도 이하일때 예외 처리
+                                if (currentYearIndex === 19) {
+                                    Number(document.querySelector('.years-front-data').textContent = 19);
+                                }
+                            },
+                            onEnterBack: function () {
+                                // 현재 년도 인덱스 업데이트
+                                currentYearIndex = index;
+
+                                // 텍스트 업데이트
+                                years.innerHTML = elements[currentYearIndex].querySelector(".year[data-index]").getAttribute("data-index");
+
+                                // 1999년도 이하가 아닐때 예외 처리
+                                if (elements[currentYearIndex].querySelector(".year[data-index]").getAttribute("data-index") === '00') {
+                                    Number(document.querySelector('.years-front-data').textContent = 20);
+                                }
+                            },
+                        },
+                    });
+                });
+
+                // 초기 텍스트 설정
+                years.innerHTML = elements[currentYearIndex].querySelector(".year > em").innerHTML;
+            }
+        </script>
+    </body>
+</html>

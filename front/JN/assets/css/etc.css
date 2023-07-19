@@ -1,0 +1,49 @@
+/*** etc공통 ***/
+.etc .content-head{display:flex;justify-content:space-between;align-items:center;}
+.etc h2{font-size:2.5rem;line-height:1.5;}
+.etc .form-select.t-search{min-width:210px;}
+.etc .privacy-content{padding-top:50px;color:#000000;}
+.etc .privacy-content strong{font-weight:600;font-size:1.125rem;}
+.etc .privacy-content>ol{padding-top:25px;}
+.etc .privacy-content>ol li{font-size:1.125rem;line-height:1.5;}
+.etc .privacy-content>ol>li:not(:first-child){padding-top:25px;}
+.etc .privacy-content>ol>li>ol{padding-top:30px;}
+.etc .privacy-content ul{margin-top:50px;border-top:1px solid #333;}
+.etc .privacy-content ul>li{line-height:1.5;font-size:1.125rem;}
+.etc .privacy-content ul>li+li{border-bottom:1px solid #e0e0e0;}
+.etc .privacy-content ul>li em{font-weight:600;}
+.etc .privacy-content p{line-height:1.5;font-size:1.125rem;}
+.etc .privacy-content ol li span{line-height:1.55;}
+
+/* privacy */
+.privacy .privacy-content ul>li{display:flex;padding:30px 0;border-bottom:1px solid #e0e0e0;color:#333333;align-items:baseline;}
+.privacy .privacy-content ul>li em{display:inline-block;min-width:216px;padding:0 50px;}
+
+/* video */
+.board.t-video{margin-top:50px;text-align:center;border-top:1px solid #333;color:#333333;}
+.board.t-video .board-item{border-bottom:1px solid #e0e0e0;}
+.board.t-video .board-item th{padding:30px 10px;font-weight:600;}
+.board.t-video .board-item td{padding:30px 10px;}
+.board.t-video .board-item td span{font-family:"NotosansJP";}
+.board.t-video .board-item td .video .privacy-content ul{display:flex;margin-top:60px;}
+
+@media all and (max-width:1200px){
+    .etc h2{font-size:2.25rem;}
+    .etc .privacy-content strong,.etc .privacy-content>ol li,.etc .privacy-content p{font-size:1rem;}
+}
+@media all and (max-width:799px){
+    .etc h2{width:100%;margin-bottom:30px;}
+    .etc .content-head{flex-direction:column;align-items:flex-start;}
+    .etc .privacy-content{padding-top:40px;}
+    .etc .form-select-group,.etc .form-select.t-search{min-width:100%;max-width:100%;width:100%;}
+
+    /* privacy */
+    .privacy .privacy-content ul>li{padding:23px 0;}
+    .privacy .privacy-content ul>li em{display:inline-block;min-width:140px;padding:0 10px;}
+
+    /* video */
+    .etc .privacy-content ul,.board.t-video{margin-top:35px;}
+    .board.t-video .board-item th{padding:23px 10px;}
+    .board.t-video .board-item td{padding:23px 10px;}
+}
+

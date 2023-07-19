@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSR | VALUE | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/value.css"> <!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+        <!-- [D] 별도 호출 -->
+        <script src="../../assets/js/gsap.min.js"></script>
+        <script src="../../assets/js/ScrollTrigger.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="jp">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>価値実現</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="javascript:void(0)" class="active">社会貢献</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- container -->
+            <main id="container" class="container value csr">
+                <!-- visual -->
+                <div class="content visual">
+                    <div class="visual-img"><span class="sr-only">메인 이미지 입니다.</span></div>
+                    <div class="inner">
+                        <h3>より良い世界をつくる<br>社会貢献</h3>
+                        <p>社会的責任を果たし、隣人と共存する企業になります。</p>
+                    </div>
+                </div>
+                <!-- //visual -->
+
+                <!-- 메인타이틀 -->
+                <div class="content main-title scrollMotion">
+                    <div class="inner">
+                        <div class="content-head">
+                            <div class="title-area m-tit01">
+                                <h4>共生社会を作っていきます。</h4>
+                                <p>企業の社会的責任を果たし、社会問題の解決に貢献することで、組織の構成員、会社、社会が共に生き、繁栄することに貢献します。</p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="img-box">
+                                <!-- 230622 구본용 : 번역 미 제공 -->
+                                <img class="pc-image" src="../../assets/images/value_csr_intro.png" alt="아름다운 세상 만들기 01 나눔 실천 02 지역 발전 03 재능 기부 04 장애인 고용">
+                                <img class="m-image fullover" src="../../assets/images/m_value_csr_intro.png" alt="아름다운 세상 만들기 01 나눔 실천 02 지역 발전 03 재능 기부 04 장애인 고용">
+                                <!-- //230622 구본용 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //메인타이틀 -->
+
+                <!-- 사회공헌 활동 -->
+                <div class="content social-cont scrollMotion">
+                    <div class="inner">
+                        <div class="content-head">
+                            <div class="sub-title-area m-tit01">
+                                <h5>社会貢献活動</h5>
+                                <p>
+                                    <!-- 230622 구본용 : 굵은 글씨 -->
+                                    トランスコスモスコリアは、共に幸せになるために人材育成、環境保全、健康増進のための社会貢献活動を積極的に展開しています。豊かで便利な生活のためのTCKの努力が企業の枠を超え、社会でも継続的に展開されるよう努力しています。
+                                    <!-- //230622 구본용 -->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <ul class="social-area">
+                                <li>
+                                    <img src="../../assets/images/value_csr01.png" alt="풍력 발전기가 돌아가는 이미지">
+                                    <div class="txt-wrap">
+                                        <em>ESG情報共有</em>
+                                        <p>
+                                            毎月、組織文化ニュースレターを発行し、ESG情報の共有及びSNS認証イベントを実施しています。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="../../assets/images/value_csr02.png" alt="기부 도서를 들고 관계자와 사진찍는 이미지">
+                                    <div class="txt-wrap">
+                                        <em>図書寄付キャンペーン</em>
+                                        <p>
+                                            トランスコスモスコリアの社会貢献プロジェクト「ピウムナヌムチェウム&#40;空ける分ける満たす&#41;」は、文化的弱者のための図書寄付キャンペーンです。読まれずに眠っている本を寄付することで、地域社会とトランスコスモスコリアが共に成長する社会を夢見ています。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //사회공헌 활동 -->
+
+                <!-- with together -->
+                <div class="content with-cont scrollMotion">
+                    <div class="inner">
+                        <div class="content-head">
+                            <div class="sub-title-area m-tit01">
+                                <h5>With together</h5>
+                                <p>
+                                    トランスコスモスコリアの従業員と共に行う社会貢献プログラム<br class="mo-hidden">「ウィズ・トゥギャザー」キャンペーンを通じて、健康で美しい<br class="mo-hidden">社会を作るために努力します。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="control-btns">
+                                <button class="btn prev">
+                                    <span class="sr-only">이전으로</span>
+                                </button>
+                                <button class="btn next">
+                                    <span class="sr-only">다음으로</span>
+                                </button>
+                            </div>
+                            <ul class="with-list">
+                                <li class="with-item item01 active">
+                                    <em class="num">01</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第1回ボランティア活動「ご飯を食べよう」</span>
+                                        <p>
+                                            冬休み期間中、保護が必要な児童が健康的に長期休暇を送れるように昼食を支援<br>
+                                            支援金 : 20,000,000ウォン<br>
+                                            対象 : 全国の小学校123校に通う児童2,386人に昼食を提供
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="with-item item02">
+                                    <em class="num">02</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第２回ボランティア活動「大丈夫だよ、応援するよと同じくらい！愛しています」</span>
+                                        <p>
+                                            貧困家庭の女児に女性用衛生用品及び新型コロナ予防物資を支援<br>
+                                            支援金 : 38,585,000ウォン<br>
+                                            対象 : 全国の貧困家庭の女児300人に物品を寄贈
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="with-item item03">
+                                    <em class="num">03</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第３回ボランティア活動「&#35;Study Must go on」</span>
+                                        <p>
+                                            非対面授業のため困っている児童にIT学習機器を支援<br>
+                                            支援金 : 35,440,000ウォン<br>
+                                            対象 : 全国の児童128人にタブレットPCを提供<br>
+                                            全羅北道群山の46地域の児童センターにウェブカメラを寄贈
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="with-item item04">
+                                    <em class="num">04</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第４回ボランティア活動「&#40;part1&#41; 心の健康！ Build-Up！, &#40;part2&#41;こどもの健康で楽しいお弁当タイム」</span>
+                                        <p>
+                                            児童の情緒的安定及び健康的な成長のための支援<br>
+                                            支援金 : 30,000,000ウォン<br>
+                                            対象 : &#40;part1&#41; 京畿道水原心理治癒センターの環境改善<br>
+                                            &#40;part2&#41;ソウル地域の児童75人に健康なおかずを支援
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="with-item item05">
+                                    <em class="num">05</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第５回ボランティア活動「Study Must Go on」シーズン2</span>
+                                        <p>
+                                            児童の教育環境改善が必要な家庭に壁紙及び床材施工、学習用家具を支援<br>
+                                            支援金 : 30,621,900ウォン<br>
+                                            対象 : 住居改善が必要な貧困層の児童
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="with-item item06">
+                                    <em class="num">06</em>
+                                    <div class="txt-wrap">
+                                        <span class="tit">第６回ボランティア活動「バリアフリー児童の権利教育コンテンツ支援」</span>
+                                        <p>
+                                            視聴覚障害児童のためのバリアフリー児童の権利教育コンテンツ支援<br>
+                                            支援金 : 28,400,000ウォン<br>
+                                            対象 : 全国の視聴覚障害者学校12校&#40;児童349人&#41;
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //with together -->
+
+                <!-- 친환경 활동 -->
+                <div class="content eco-cont scrollMotion">
+                    <div class="inner">
+                        <div class="content-head">
+                            <div class="sub-title-area m-tit01">
+                                <!-- 230622 구본용 : 번역 미 제공 -->
+                                <h5>친환경 활동</h5>
+                                <p>
+                                    TCK는 사무실에서도 간단하게 실천할 수 있는 환경 보호 캠페인인<br>
+                                    ‘지구를 위해’ 캠페인을 전개하고 있습니다.
+                                </p>
+                                <!-- //230622 구본용 -->
+                            </div>
+                            <div class="eco-img">
+                                <img src="../../assets/images/value_csr04.png" alt="페트병 분리배출 캠페인" id="imgEco1">
+                                <img src="../../assets/images/value_csr03.png" alt="페이퍼타월 절약 캠페인" id="imgEco2">
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <ul class="eco-area">
+                                <li data-target="#imgEco1">
+                                    <em class="num">01</em>
+                                    <div class="txt-wrap">
+                                        <span>大切な地球のために</span>
+                                        <p>
+                                            世界的に環境保護の重要性が高まるにつれ、環境保護に賛同する消費者が増え、TCKも環境保護の一環として「ペットボトルの分別廃棄 - 水ですすぎ、ラベルは剥がして」分別回収推奨ポスターを制作し実践しています。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li data-target="#imgEco2">
+                                    <em class="num">02</em>
+                                    <div class="txt-wrap">
+                                        <span>ペーパータオルは1枚だけ</span>
+                                        <p>
+                                            ペーパータオル1枚が分解されるまで約1ヶ月もの時間がかかります。<br>
+                                            ペーパータオルを1人が1年使うことで毎年1本の木が消えています。<br>
+                                            そこでTCKは無分別に使用されるペーパータオルの使用を減らし、環境保護に貢献するためのキャンペーンを実践しています。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //친환경 활동 -->
+            </main>
+            
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+
+        <script>
+            // 로딩 시 스크롤 초기화
+            ScrollTrigger.clearScrollMemory();
+            window.history.scrollRestoration = "manual";
+            document.addEventListener("DOMContentLoaded", () => {
+                bgMotion();
+                scrollMotionTrigger();
+                ListMotion();
+                setTogetherSlider();
+                hoverMotion();
+            });
+            function scrollMotionTrigger() {
+                if ($(".scrollMotion").length > 0 || $(".scrollMotion2").length > 0) {
+                    $(".scrollMotion:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "top 83%",
+                                end: "bottom center",
+                                toggleClass: { targets: $(".scrollMotion:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                // markers: true,
+                            },
+                        });
+                    });
+
+                    $(".scrollMotion2:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "center 100%",
+                                end: "bottom top",
+                                toggleClass: { targets: $(".scrollMotion2:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                // markers: true,
+                            },
+                        });
+                    });
+                }
+            }
+
+            function bgMotion() {
+                let bgMotion = document.querySelector(".visual-img");
+                gsap.to(bgMotion, {
+                    duration: 1.5,
+                    scale: 1,
+                });
+
+                let content = document.querySelectorAll(".content");
+                let subTit = document.querySelector(".sub-title-area h5");
+                let subTxt = document.querySelector(".sub-title-area p");
+
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: content[1],
+                        start: "5% top",
+                        end: "bottom center",
+                        toggleActions: "play none none none",
+                    },
+                });
+            }
+
+            function ListMotion() {
+                const List = document.querySelectorAll(".social-area > li");
+                List.forEach((element, idx) => {
+                    gsap.fromTo(
+                        element,
+                        {
+                            ease: "easeIn",
+                            opacity: 0,
+                        },
+                        {
+                            ease: "easeIn",
+                            opacity: 1,
+                            scrollTrigger: {
+                                trigger: element,
+                                start: "10% center",
+                                end: "center bottom",
+                                // markers: true,
+                                toggleActions: "play none none none",
+                            },
+                        }
+                    );
+                });
+            }
+
+            function hoverMotion() {
+                let ecoItem = $(".eco-area li");
+                let ecoImg = $("eco-img img");
+                $(ecoItem).mouseover(function (e) {
+                    e.preventDefault();
+                    let target = $(this).data("target");
+                    if (!$(target).hasClass("on")) {
+                        $(target).addClass("on").siblings().removeClass("on");
+                    }
+                });
+                $(ecoItem).mouseout(function (e) {
+                    e.preventDefault();
+                    let target = $(this).data("target");
+                    $(target).removeClass("on");
+                });
+            }
+
+            function setTogetherSlider() {
+                const container = $(".with-cont");
+                const slideItems = $(".with-list li");
+                const btnNext = $(".control-btns .next");
+                const btnPrev = $(".control-btns .prev");
+
+                let transitionIsRunning = false;
+                let currentIndex = 0; //인덱스값
+
+                btnNext.on("click", function (e) {
+                    if (!transitionIsRunning) {
+                        currentIndex = currentIndex >= slideItems.length - 1 ? 0 : (currentIndex += 1);
+
+                        activeSlide(currentIndex);
+                        transitionIsRunning = true;
+
+                        let timer = setTimeout(() => {
+                            transitionIsRunning = false;
+
+                            clearTimeout(timer);
+                        }, 650);
+                    }
+                });
+
+                btnPrev.on("click", function (e) {
+                    if (!transitionIsRunning) {
+                        currentIndex = currentIndex <= 0 ? (currentIndex = slideItems.length - 1) : (currentIndex -= 1);
+
+                        activeSlide(currentIndex);
+                        transitionIsRunning = true;
+
+                        let timer = setTimeout(() => {
+                            transitionIsRunning = false;
+
+                            clearTimeout(timer);
+                        }, 650);
+                    }
+                });
+
+                function activeSlide(idx) {
+                    let activeSlide = slideItems.eq(idx);
+
+                    $(activeSlide).addClass("active").siblings().removeClass("active");
+                }
+            }
+        </script>
+    </body>
+</html>

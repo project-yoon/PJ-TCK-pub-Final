@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <title>TRANSCOSMOS KOREA</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/main.css"><!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+        <!-- [D] 별도 호출 -->
+        <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+        <script src="../../assets/js/gsap.min.js"></script>
+        <script src="../../assets/js/ScrollTrigger.min.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="jp">
+            <!-- skip_navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+
+            <!-- import header -->
+            <header id="header" class="main-header"></header>
+
+            <!-- container -->
+            <main id="container" class="container main">
+                <!-- visual content -->
+                <div class="visual-content">
+                    <!-- 메인 비쥬얼 케이스 : 이미지 (스와이퍼) -->
+                    <!-- <div class="swiper main-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-img">
+                                <img src="../../assets/images/main_visual_slide01.png" alt="" class="main_bg">
+                                <div class="visual-title-box">
+                                    <h2>GLOBAL DIGITAL <br>TRANSFORMATION PARTNER</h2>
+                                    <p>人と技術が調和を成す、グローバルBPOサービスをご体験ください!</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-img">
+                                <img src="../../assets/images/main_visual_slide02.png" alt="" class="main_bg">
+                                <div class="visual-title-box">
+                                    <h2>SPECIALIZED<br>MARKETING SERVICE</h2>
+                                    <p>人と技術が調和を成す、グローバルBPOサービスをご体験ください!</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-img">
+                                <img src="../../assets/images/main_visual_slide03.png" alt="" class="main_bg">
+                                <div class="visual-title-box">
+                                    <h2>GLOBAL BPO <br>LEADER</h2>
+                                    <p>人と技術が調和を成す、グローバルBPOサービスをご体験ください!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="swiper-button-next"></a>
+                        <a href="javascript:void(0)" class="swiper-button-prev"></a>
+                        <div class="control-box">
+                            <div class="swiper-pagination"></div>
+                            <div class="active-txt">
+                                <span class="num"></span>
+                                <p class="txt"></p>
+                            </div>
+                            <a href="" class="play-btn">
+                                <span></span>
+                            </a>
+                        </div>
+                        <a href="#motion01" class="autoplay-progress">
+                            <svg viewBox="0 0 56 56">
+                                <circle cx="28" cy="28" r="27"></circle>
+                            </svg>
+                            <span class="scroll-down"></span>
+                        </a>
+                    </div> -->
+                    <!-- // 메인 비쥬얼 케이스 : 이미지 -->
+
+                    <!-- 메인 비쥬얼 케이스 : 영상 (1개의 영상 노출)-->
+                    <div class="visual-dim"></div>
+                        <video autoplay muted loop style="height: 100%; width: 100%" class="visual-video">
+                            <source src="../../assets/images/main_visual01.mp4" type="video/mp4">
+                        </video>
+                        <a href="#motion01" class="autoplay-progress">
+                            <svg viewBox="0 0 56 56">
+                                <circle cx="28" cy="28" r="27"></circle>
+                            </svg>
+                            <span class="scroll-down"></span>
+                        </a>
+                        <div class="visual-title-box">
+                            <h2>GLOBAL DIGITAL <br>TRANSFORMATION PARTNER</h2>
+                            <p>人と技術が調和を成す、グローバルBPOサービスをご体験ください!</p>
+                        </div>
+                    <!-- // 메인 비쥬얼 케이스 : 영상 -->
+                </div>
+                <!-- //visual content -->
+                <div id="motion01" class="content full motion01">
+                    <div class="inner">
+                        <div class="body-tit">
+                            <div tabindex="0" class="before">
+                                <h4>ABOUT <br class="mo-hidden">US</h4>
+                                <p>お客様の成長と価値を創出する<br>戦略的なBusiness Partner</p>
+                            </div>
+                            <div tabindex="0" class="after">
+                                <h4>ABOUT <br class="mo-hidden">US</h4>
+                                <p>お客様の成長と価値を創出する<br>戦略的なBusiness Partner</p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="bg-box">
+                                <div class="bg bg01" tabindex="0">
+                                    <a href="../company/overview.html" target="_self" class="bg-txt" aria-label="기업개요 페이지로 이동합니다.">
+                                        <div class="tit-box">
+                                            <div class="tit">
+                                                <span>Company</span>
+                                                <div class="btn t-detail t-totop white">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt">トランスコスモスコリアはGlobal Digital Transformation Partnerとして人と技術が結合したCXサービスを提供する企業です。</p>
+                                    </a>
+                                </div>
+                                <div class="bg bg02" tabindex="0">
+                                    <a href="../company/history.html" target="_self" class="bg-txt" aria-label="연혁&수상·인증 페이지로 이동합니다.">
+                                        <div class="tit-box">
+                                            <div class="tit">
+                                                <span>History</span>
+                                                <div class="btn t-detail t-totop white">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt">トランスコスモスコリアは、新たな挑戦と持続的な成長を通じて、誇らしい歴史を築いていきます。</p>
+                                    </a>
+                                </div>
+                                <div class="bg bg03" tabindex="0">
+                                    <a href="../company/clients.html" target="_self" class="bg-txt" aria-label="고객사 페이지로 이동합니다.">
+                                        <div class="tit-box">
+                                            <div class="tit">
+                                                <span>Partners</span>
+                                                <div class="btn t-detail t-totop white">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="txt">300社以上のパートナー企業のために上質で安定したサービスを提供しています。</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 스크롤 영역에 관한 div 입니다 -->
+                            <div class="scroll-box">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!-- // 스크롤 영역에 관한 div 입니다 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="content motion02">
+                    <div class="inner">
+                        <div class="content-body">
+                            <div class="body-tit">
+                                <h4>Numbers <br>at A Glance</h4>
+                                <p>Global BPO Service Leaderとして飛躍します。</p>
+                            </div>
+                            <div class="swiper num-swiper">
+                                <div class="swiper-btn-wrap">
+                                    <a href="" class="swiper-btn prev"></a>
+                                    <a href="" class="swiper-btn next"></a>
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" id="slide01">
+                                        <div class="tit-box"><strong data-count="56" class="count">56</strong><span>年</span></div>
+                                        <div class="txt-box">
+                                            <span>1966年設立</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" id="slide02">
+                                        <div class="tit-box"><strong data-count="30" class="count">30</strong><span>ヵ国</span></div>
+                                        <div class="txt-box">
+                                            <span>30ヵ国をサポート</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" id="slide03">
+                                        <div class="tit-box"><strong data-count="130" class="count">130</strong><span>ヵ所</span></div>
+                                        <div class="txt-box">
+                                            <span>全国業種別カスタマーセンタ<br>ー運営</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" id="slide04">
+                                        <div class="tit-box"><strong data-count="280" class="count">280</strong><!-- <span>Projects</span> --></div>
+                                        <div class="txt-box">
+                                            <span>280以上の韓国内<br>プロジェクト運営</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" id="slide05">
+                                        <div class="tit-box"><strong data-count="50" class="count">50</strong><!-- <span>Projects</span> --></div>
+                                        <div class="txt-box">
+                                            <span>50余りのグローバル<br>プロジェクト運営</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content motion03">
+                    <div class="inner">
+                        <div class="scale-wrap">
+                            <div class="scale-tit">
+                                <p>Global <br>BPO Service</p>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <div class="table-t-wrap">
+                                <div class="table-t">
+                                    <div class="row ani01">
+                                        <div class="ani">
+                                            <a href="../business/itsolutiondev.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                        <div class="txt-wrap">
+                                            <a href="../business/itsolutiondev.html" role="button">
+                                                <strong>AI&amp;IT <br>Solution</strong>
+                                                <p>長年の運営ノウハウを基にIT/ソリューションを<br class="mo-hidden">自社運営/開発します。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani02">
+                                        <div class="txt-wrap">
+                                            <a href="../business/contactcenter.html" role="button">
+                                                <strong>CX</strong>
+                                                <p>効率的なインバウンドサービスプロセスを基盤に、<br class="mo-hidden">企業の管理コストを削減します。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="ani">
+                                            <a href="../business/contactcenter.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani03">
+                                        <div class="ani">
+                                            <a href="../business/fieldservice.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                        <div class="txt-wrap">
+                                            <a href="../business/fieldservice.html" role="button">
+                                                <strong>Field</strong>
+                                                <p>専門人材を提供し、<br class="mo-hidden">柔軟な企業経営をサポートします。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani04">
+                                        <div class="txt-wrap">
+                                            <a href="../business/backoffice.html" role="button">
+                                                <strong>Back-office</strong>
+                                                <p>ビジネスとお客様の接点になる<br class="mo-hidden">バックオフィスサービスを提供します。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="ani">
+                                            <a href="../business/backoffice.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani05">
+                                        <div class="ani">
+                                            <a href="../business/directmail.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                        <div class="txt-wrap">
+                                            <a href="../business/directmail.html" role="button">
+                                                <strong>Direct Mail</strong>
+                                                <p>企業のDMサービスを迅速かつ正確にお届けします。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani06">
+                                        <div class="txt-wrap">
+                                            <a href="../business/ecdx.html" role="button">
+                                                <strong>EC/DX</strong>
+                                                <p>ショッピングモールの構築・運営から、<br class="mo-hidden">プロモーション、配送、アフターサービスまで<br class="mo-hidden">ワンストップサービスを提供します。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="ani">
+                                            <a href="../business/ecdx.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani07">
+                                        <div class="ani">
+                                            <a href="../business/edu.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                        <div class="txt-wrap">
+                                            <a href="../business/edu.html" role="button">
+                                                <strong>Consulting</strong>
+                                                <p>個人と組織が共に成長するカスタマイズ<br class="mo-hidden">型の教育サービスを提供します。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row ani08">
+                                        <div class="txt-wrap">
+                                            <a href="../business/tckedu.html" role="button">
+                                                <strong>Education</strong>
+                                                <p>お客様の価値と競争力を高め、最高のサービスを提供で<br class="mo-hidden">きるようにサポートいたします。</p>
+                                                <div class="btn t-detail t-toright">
+                                                    <span>詳細を</span>
+                                                    <i class="icon"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="ani">
+                                            <a href="../business/tckedu.html">
+                                                <div class="ani-img"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content motion04">
+                    <div class="inner">
+                        <div class="content-body">
+                            <a href="../value/csr.html" class="cont-link" target="_self">
+                                <div class="top">
+                                    <h4>VALUE <br>REALIZATION</h4>
+                                    <div class="btn t-detail t-totop white mo-hidden">
+                                        <span>詳細を</span>
+                                        <i class="icon"></i>
+                                    </div>
+                                    <div class="btn t-detail t-toright white mo-visible">
+                                        <span>詳細を</span>
+                                        <i class="icon"></i>
+                                    </div>
+                                </div>
+                                <div class="sub-txt">
+                                    <p>
+                                        社会的弱者への奉仕と支援を実践することにより、社会的責任と透明性を持った経営を実現し、持続可能な発展を追求します。
+                                    </p>
+                                    <!-- 230616 구본용 : 다국어 원고_1차_ENJP_230608 기준 아래문장이 존재하며, 국문 부분에도 주석처리된 문장이 존재하나 피그마에 반영되어 있지 않음 -->
+                                    <!-- <p>
+                                        대내외로 다양한 활동을 통해 자연과 사람의 지속가능한 미래를 지키며, 건강한 환경을 만들겠습니다
+                                    </p> -->
+                                    <p>
+                                        内外に向けた様々な活動を通じて、自然と人の持続可能な未来を守り、健康な環境を作ります。
+                                    </p>
+                                    <!-- //230616 구본용 -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content motion06">
+                    <div class="inner">
+                        <div class="content-body">
+                            <div class="txt-box">
+                                <h4>People &amp; Technology</h4>
+                                <p>
+                                    다양한 사람과 뛰어난 기술로<br>
+                                    트랜스코스모스코리아와 함께 당신의 꿈을 펼쳐보세요
+                                </p>
+                                <!-- <a href="javascript:void(0)" class="btn b-round def">인재채용 바로가기</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //230616 구본용 -->
+            </main>
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                motion03();
+                mainSwiper();
+                mainSubSwiper();
+                motion01();
+                motion03_1();
+                hoverBtn();
+            });
+
+            // 로딩 시 스크롤 초기화
+            ScrollTrigger.clearScrollMemory();
+            window.history.scrollRestoration = "manual";
+
+            function motion01() {
+                gsap.registerPlugin(ScrollTrigger);
+                // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+                // let smoother = ScrollSmoother.create({
+                //   smooth: 2,
+                //   smoothTouch: 0.1,
+                //   effects: true,
+                // });
+
+                const bgWrap = document.querySelectorAll(".bg-box");
+                const bgs = document.querySelectorAll(".bg-box > div");
+                const bgTxt = document.querySelectorAll(".bg-box .bg-txt");
+                const bodyTit = document.querySelector(".body-tit > div");
+                const bodyTitAfter = document.querySelector(".body-tit .after");
+                const textBoxItem = document.querySelectorAll(".scroll-box > div");
+
+                gsap.to(bgWrap, {
+                    scrollTrigger: {
+                        trigger: ".motion01",
+                        start: "top top",
+                        end: "bottom bottom",
+                        toggleActions: "play none none reset",
+                        scrub: 1,
+                        pin: bgWrap,
+                    },
+                });
+
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".motion01",
+                        start: "5% center",
+                        end: "+=500%",
+                        toggleActions: "play none none reset",
+                        scrub: 2,
+                        onLeaveBack: function () {
+                            bgs[0].classList.remove("dim");
+                            bodyTitAfter.classList.remove("on");
+                        },
+                    },
+                });
+                tl01.addLabel("titleActive");
+
+                ScrollTrigger.matchMedia({
+                    // pc
+                    "(min-width: 928px)": function () {
+                        tl01.fromTo(
+                            bgs,
+                            {
+                                duration: 0.5,
+                                width: "80%",
+                                y: 500,
+                            },
+                            {
+                                duration: 0.5,
+                                width: "100%",
+                                y: 0,
+                            },
+                            "titleActive"
+                        );
+                    },
+                    "(min-width: 800px) and (max-width: 927px)": function () {
+                        tl01.fromTo(
+                            bgs,
+                            {
+                                duration: 0.5,
+                                width: "90%",
+                                y: 400,
+                            },
+                            {
+                                duration: 0.5,
+                                width: "100%",
+                                y: 0,
+                            },
+                            "titleActive"
+                        );
+                    },
+                    // mobile
+                    "(max-width: 799px)": function () {
+                        tl01.fromTo(
+                            bgs,
+                            {
+                                duration: 0.5,
+                                width: "90%",
+                                y: 265,
+                            },
+                            {
+                                duration: 0.5,
+                                width: "100%",
+                                y: 0,
+                            },
+                            "titleActive"
+                        );
+                    },
+                });
+
+                window.addEventListener("resize", ScrollTrigger.update);
+
+                tl01.to(
+                    ".body-tit .after",
+                    {
+                        duration: 0.2,
+                        clipPath: "polygon(0 0, 100% 0, 100% 0%, 0% 0%)",
+                        onStart: function () {},
+                    },
+                    "titleActive"
+                );
+
+                tl01.to(".bg-box .bg01", {
+                    duration: 8,
+                    opacity: 1,
+                    zIndex: 1,
+                    onStart: function () {
+                        bgs[0].classList.add("dim");
+                        bodyTit.classList.add("active");
+                    },
+                });
+
+                tl01.fromTo(
+                    ".bg-box .bg02",
+                    {
+                        duration: 8,
+                        delay: 0.5,
+                    },
+                    {
+                        duration: 8,
+                        delay: 0.5,
+                    }
+                );
+
+                tl01.fromTo(
+                    ".bg-box .bg03",
+                    {
+                        duration: 8,
+                        delay: 0.5,
+                    },
+                    {
+                        duration: 8,
+                        delay: 0.5,
+                    }
+                );
+
+                tl01.to(".motion01 .body-tit", {
+                    scrollTrigger: {
+                        trigger: ".motion01",
+                        start: "top top",
+                        end: "bottom bottom",
+                        pin: ".body-tit",
+                        pinSpacing: false,
+                        toggleActions: "play none none reset",
+                        scrub: 1,
+                        padding: 500,
+                        onLeaveBack: function () {
+                            bodyTit.classList.remove("active");
+                        },
+                    },
+                });
+
+                textBoxItem.forEach((element, idx) => {
+                    gsap.fromTo(
+                        element,
+                        {
+                            ease: "linear",
+                            opacity: 0,
+                        },
+                        {
+                            ease: "linear",
+                            opacity: 1,
+                            onStart: function () {
+                                bgs[idx].style.opacity = 1;
+                                bgTxt[idx].classList.add("active");
+                                bgs[idx].style.zIndex = idx + 1;
+                            },
+
+                            scrollTrigger: {
+                                trigger: element,
+                                start: "top top",
+                                end: "center bottom",
+                                pin: ".scroll-box",
+                                // markers: true,
+                                // scrub: 2.5,
+
+                                toggleActions: "play none none reset",
+                                onLeaveBack: function () {
+                                    bgTxt[idx].classList.remove("active");
+                                    let lastIndex = -1;
+                                    if (idx !== 0) {
+                                        bgs[idx].style.opacity = 0;
+                                        lastIndex = idx;
+                                    }
+                                },
+                                onUpdate: (self) => {
+                                    self.progress === 1 ? (bgs[idx].style.zIndex = idx + 1) : (bgs[idx].style.zIndex = "");
+                                    self.progress === 1 ? bgTxt[idx].classList.add("active") : bgTxt[idx].classList.remove("active");
+                                    self.progress === 1 ? bgs[idx].classList.add("active") : bgs[idx].classList.remove("active");
+                                },
+                            },
+                        }
+                    );
+                });
+            }
+
+            function numberCounter(target_frame, target_number) {
+                this.count = 0;
+                this.diff = 0;
+                this.target_count = parseInt(target_number);
+                this.target_frame = document.getElementById(target_frame).querySelector(".count");
+                this.main_target_frame = document.getElementById(target_frame);
+                this.timer = null;
+                this.counter();
+
+                var self = this;
+                this.main_target_frame.addEventListener("mouseenter", function () {
+                    clearTimeout(self.timer);
+                    self.count = 0;
+                    self.counter();
+                });
+
+                this.main_target_frame.addEventListener("touchstart", function () {
+                    clearTimeout(self.timer);
+                    self.count = 0;
+                    self.counter();
+                });
+            }
+
+            numberCounter.prototype.counter = function () {
+                var self = this;
+                this.diff = this.target_count - this.count;
+
+                if (this.diff > 0) {
+                    self.count += Math.ceil(this.diff / 5);
+                }
+
+                this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+                if (this.count < this.target_count) {
+                    this.timer = setTimeout(function () {
+                        self.counter();
+                    }, 30);
+                } else {
+                    clearTimeout(this.timer);
+                }
+            };
+            // $(".num-swiper .swiper-slide").each(function (idx, el) {
+            //     let id = $(el).prop("id");
+            //     let counter = $(el).find(".count").data("count");
+            //     let number = new numberCounter($(el).prop("id"), counter);
+            // });
+
+            var mediaQuery = window.matchMedia("(min-width: 1025px)");
+
+            function handleMediaQueryChange(mediaQuery) {
+                if (mediaQuery.matches) {
+                    $(".num-swiper .swiper-slide").each(function (idx, el) {
+                        let id = $(el).prop("id");
+                        let counter = $(el).find(".count").data("count");
+                        let number = new numberCounter($(el).prop("id"), counter);
+                    });
+                }
+            }
+
+            handleMediaQueryChange(mediaQuery);
+            mediaQuery.addListener(handleMediaQueryChange);
+
+            function motion03() {
+                let stickyElem = document.querySelector(".main .motion03 .scale-tit");
+                let borderWidth = document.querySelector(".main .motion03 .table-t-wrap");
+                let motion02 = document.querySelector(".main .motion02");
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".motion02",
+                        start: "center",
+                        end: "+=150",
+                        scrub: 2.5,
+                        // markers: true,
+                        toggleActions: "play none reverse none",
+                        onUpdate: (self) => {
+                            self.progress === 1 ? borderWidth.classList.add("active") : borderWidth.classList.remove("active");
+                        },
+                    },
+                });
+
+                ScrollTrigger.matchMedia({
+                    // pc
+                    "(min-width: 1451px)": function () {
+                        tl01.addLabel("scaleMotion");
+                        tl01.fromTo(
+                            ".motion03 .scale-tit",
+                            {
+                                duration: 10,
+                                fontSize: "6rem",
+                                margin: "-18.563rem 0 0",
+                                y: 0,
+                            },
+                            {
+                                duration: 10,
+                                fontSize: "2.75rem",
+                                margin: 0,
+                                y: 75,
+                            },
+                            "scaleMotion"
+                        );
+
+                        tl01.fromTo(
+                            ".motion02",
+                            {
+                                duration: 10,
+                                marginBottom: "15rem",
+                            },
+                            {
+                                duration: 10,
+                                marginBottom: 0,
+                            },
+                            "scaleMotion"
+                        );
+                    },
+                    // mobile
+                    "(max-width: 1449px)": function () {
+                        tl01.to(".motion03 .scale-tit", {
+                            fontSize: "2.75rem",
+                        });
+                    },
+                });
+            }
+
+            function motion03_1() {
+                const aniRow = document.querySelectorAll(".motion03 .row");
+                const aniEle = document.querySelectorAll(".motion03 .row .ani > a, .motion03 .row .txt-wrap > a");
+                const aniImgElements = document.querySelectorAll(".ani-img");
+
+                aniEle.forEach((el, index) => {
+                    gsap.fromTo(
+                        el,
+                        {
+                            duration: 0.5,
+                            opacity: 0,
+                            y: 150,
+                            ease: "circ.out",
+                        },
+                        {
+                            duration: 0.5,
+                            opacity: 1,
+                            y: 0,
+                            ease: "circ.out",
+                            scrollTrigger: {
+                                trigger: el,
+                                start: "top 90%",
+                                end: "bottom top",
+                                toggleActions: "play none none none",
+                                once: true,
+                            },
+                        }
+                    );
+                });
+
+                aniImgElements.forEach(function (element) {
+                    element.addEventListener("mouseenter", function () {
+                        TweenLite.to(this, 1, { scale: 1.1 });
+                    });
+
+                    element.addEventListener("tocuhstart", function () {
+                        TweenLite.to(this, 1, { scale: 1.1 });
+                    });
+
+                    element.addEventListener("mouseleave", function () {
+                        TweenLite.to(this, 1, { scale: 1 });
+                    });
+
+                    element.addEventListener("tocuhend", function () {
+                        TweenLite.to(this, 1, { scale: 1 });
+                    });
+                });
+
+                $(".motion03 .row").each(function () {
+                    var ani = $(this).find(".ani");
+                    var txtWrap = $(this).find(".txt-wrap");
+                    var txtWrapBtn = $(this).find(".txt-wrap > a");
+                    ani.hover(function () {
+                        txtWrap.toggleClass("active");
+                    });
+                    txtWrapBtn.hover(function () {
+                        ani.toggleClass("active");
+                    });
+                });
+            }
+
+            // main visual swiper
+            function mainSwiper() {
+                let progressCircle = document.querySelector(".autoplay-progress svg");
+                let progressContent = document.querySelector(".autoplay-progress span");
+                let swiperPagination = document.querySelectorAll(".swiper-pagination");
+                let playBtn = document.querySelector(".play-btn");
+                let autoplayStarted = true;
+                let swiper = null;
+                if (swiperPagination.length === 0 || playBtn == null) return;
+                swiper = new Swiper(".main-swiper", {
+                    // spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                        // renderBullet: function (index, className) {
+                        //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+                        // },
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    on: {
+                        autoplayTimeLeft(s, time, progress) {
+                            if (autoplayStarted) {
+                                progressCircle.style.setProperty("--progress", 1 - progress);
+                            } else {
+                                progressCircle.style.setProperty("--progress", 0);
+                            }
+                        },
+                        slideChange: function (s) {
+                            let currentIndex = this.realIndex;
+                            if (this.loop) {
+                                if (currentIndex < 0) {
+                                    currentIndex = this.slides.length - 1;
+                                } else if (currentIndex >= this.slides.length) {
+                                    currentIndex = 0;
+                                }
+                            }
+                            let activeText = document.querySelector(".txt");
+                            let textNum = document.querySelector(".active-txt .num");
+                            let contents = ["BPO", "MARKETING", "GLOBAL"];
+                            textNum.textContent = `0${currentIndex + 1}`;
+                            activeText.textContent = contents[currentIndex];
+                        },
+                    },
+                });
+                playBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    progress = 0;
+                    if (autoplayStarted) {
+                        swiper.autoplay.stop();
+                        autoplayStarted = false;
+                        progressCircle.style.setProperty("--progress", 0);
+                        playBtn.classList.add("play");
+                    } else {
+                        swiper.autoplay.start();
+                        autoplayStarted = true;
+                        playBtn.classList.remove("play");
+                    }
+                    swiper.autoplay.resume();
+                });
+            }
+
+            // main sub swiper
+            function mainSubSwiper() {
+                var ww = $(window).width();
+                var numSwiper = undefined;
+                var mySwiper = new Swiper(".num-swiper", {
+                    spaceBetween: 30,
+                    slidesPerView: "auto",
+                    // centeredSlides: true,
+                    loop: false,
+                    navigation: {
+                        nextEl: ".swiper-btn.next",
+                        prevEl: ".swiper-btn.prev",
+                    },
+                });
+                function initSwiper() {
+                    if (ww < 800 && numSwiper == undefined) {
+                        if (mySwiper) {
+                            mySwiper.destroy();
+                            mySwiper = undefined;
+                        }
+                        numSwiper = new Swiper(".num-swiper", {
+                            spaceBetween: 10,
+                            centeredSlides: true,
+                            slidesPerView: "auto",
+                            loop: false,
+                        });
+                    } else if (ww >= 800 && numSwiper != undefined) {
+                        if (numSwiper) {
+                            numSwiper.destroy();
+                            numSwiper = undefined;
+                        }
+                        mySwiper = new Swiper(".num-swiper", {
+                            spaceBetween: 30,
+                            slidesPerView: "auto",
+                            loop: false,
+                            navigation: {
+                                nextEl: ".swiper-btn.next",
+                                prevEl: ".swiper-btn.prev",
+                            },
+                        });
+                    }
+                }
+
+                initSwiper();
+
+                $(window).on("resize", function () {
+                    ww = $(window).width();
+                    initSwiper();
+                });
+            }
+
+            function hoverBtn(){
+                let hoverBtn = document.querySelectorAll('.btn.t-detail')
+                let hoverSwiper = document.querySelectorAll('.num-swiper .swiper-slide')
+                hoverBtn.forEach((ele,idx)=>{
+                    if (matchMedia('all and (max-width: 1024px)').matches) {
+                        ele.classList.remove('t-totop');
+                        ele.classList.remove('t-toright');
+                    }
+                })
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+/*** csr 공통 ***/
+.csr .content:not(.visual) + .content{padding-top:0;}
+.csr .visual-img{background-image:url("../../assets/images/value_visual01.png");}
+.csr .title-area h3{font-weight:400;font-size:4rem;line-height:1.21;}
+.csr .title-area p{padding-top:50px;line-height:1.6;font-size:1.25rem;color:#727071;}
+.csr .sub-title-area h5{font-size:2.5rem;}
+.csr .sub-title-area p{padding-top:20px;font-size:1.125rem;line-height:1.5;color:#727071;}
+.csr .img-box{margin-top:150px;}
+.csr .img-box img{width:100%;}
+
+/* social-cont */
+.social-cont .social-area{margin-top:110px;}
+.social-cont .social-area li{display:flex;align-items:center;column-gap:20px;justify-content:space-between;}
+.social-cont .social-area li:nth-child(2n){flex-direction:row-reverse;padding-top:100px;}
+.social-cont .social-area img{width:628px;height:700px;background-size:cover;}
+.social-cont .social-area .txt-wrap{max-width:638px;color:#000;}
+.social-cont .social-area .txt-wrap em{font-family:"NotosansJP";font-weight:600;font-size:2rem;}
+.social-cont .social-area .txt-wrap p{padding-top:25px;font-size:1.25rem;line-height:1.6;}
+
+/* with-cont */
+.with-cont .content-head{position:relative;}
+.with-cont .sub-title-area h5{font-size:2.75rem;line-height:1.2;}
+.with-cont .control-btns{position:absolute;right:0;top:-200px;}
+.with-cont .btn{flex-shrink:0;width:100px;height:100px;border-radius:50%;background:#000;}
+.with-cont .btn::before{content:'';display:inline-block;width:18px;height:13px;background:url('../images/btn_arr_scroll_dw.png') no-repeat center/contain;}
+.with-cont .btn.next{margin-left:10px;}
+.with-cont .btn:hover{background:#727071;}
+.with-cont .btn.prev::before{transform:rotate(-180deg);}
+.with-list{display:flex;height:548px;margin-top:100px;}
+.with-list .with-item{position:relative;overflow:hidden;width:190px;transition:width 0.8s;border-radius:20px;}
+.with-list .with-item:not(:nth-child(1)){margin-left:-30px;}
+.with-list .with-item.active{width:100%;}
+.with-list .with-item.item01{background:#D0102C;z-index:5;}
+.with-list .with-item.item02{background:#D94056;z-index:4;}
+.with-list .with-item.item03{background:#DE586B;z-index:3;}
+.with-list .with-item.item04{background:#E37080;z-index:2;}
+.with-list .with-item.item05{background:#E88896;z-index:1;}
+.with-list .with-item.item06{background:#EC9FAB;}
+.with-list .with-item .num{position:absolute;right:30px;top:30px;font-weight:600;font-size:1.5rem;color:#f5f5f5;}
+.with-list .with-item .txt-wrap{position:absolute;left:60px;bottom:60px;width:730px;opacity:0;transition:opacity 0.6s ease-in-out 0.2s;}
+.with-list .with-item .txt-wrap .tit{overflow:hidden;display:block;font-weight:600;font-size:1.25rem;line-height:1.6;color:#FFFFFF;}
+.with-list .with-item .txt-wrap p{display:block;overflow:hidden;padding-top:20px;font-size:1.125rem;line-height:1.5;color:#F5F5F5;}
+.with-list .with-item .txt-wrap p span{line-height:1.5;}
+.with-list .with-item.active .txt-wrap{opacity:1;}
+
+/* eco-cont */
+.eco-cont .inner{display:flex;justify-content:space-between;}
+.eco-cont .eco-img{position:relative;width:500px;height:300px;margin-top:70px;overflow:hidden;border-radius:20px;}
+.eco-cont .eco-img img{position:absolute;left:0;top:0;width:100%;background-size:cover;opacity:0;transition:opacity 0.7s;}
+.eco-cont .eco-img img.on{opacity:1;}
+.eco-cont .eco-area{max-width:755px;}
+.eco-cont .eco-area li{display:flex;gap:70px;}
+.eco-cont .eco-area li+li{border-top:1px solid #333;padding-top:60px;margin-top:60px;}
+.eco-cont .eco-area .num{font-weight:600;font-size:4rem;color:#F5F5F5;}
+.eco-cont .eco-area span{display:block;font-weight:600;font-size:1.25rem;}
+.eco-cont .eco-area p{padding-top:23px;font-size:1.125rem;line-height:1.5;color:#727071;}
+
+@media all and (max-width:1200px){
+    .csr .img-box{margin-top:50px;}
+    .content.visual .visual-img{background-position:left;}
+    .social-cont .social-area li{display:block;}
+    .social-cont .social-area .txt-wrap{min-width:100%;margin-top:30px;}
+    .social-cont .social-area img{width:100%;height:600px;object-fit:cover;}
+    .with-list{height:450px;}
+    .with-list .with-item .txt-wrap{width:410px;word-break:break-all;transition:opacity 0.6s ease-in-out 0.2s;}
+    .eco-cont .inner{display:block;}
+    .eco-cont .eco-img{display:none;}
+    .eco-cont .eco-area{max-width:100%;margin-top:40px;}
+    .social-cont .social-area{margin-top:50px;}
+    .social-cont .social-area .txt-wrap em{font-size:1.75rem;}
+    .social-cont .social-area .txt-wrap p{font-size:1.125rem;}
+    .csr .sub-title-area h5{font-size:2.25rem;}
+    .csr .sub-title-area p,.with-list .with-item .txt-wrap p{font-size:1rem;}
+    .with-list .with-item .num{font-size:1.375rem;}
+    .with-list .with-item .txt-wrap .tit{font-size:1.125rem;}
+    .csr .title-area p{font-size:1.125rem;}
+    .eco-cont .eco-area p{font-size:1rem;}
+}
+@media screen and (min-width:800px) and (max-width:875px){
+    .with-list .with-item .txt-wrap{padding:0 90px 0 0;}
+}
+@media all and (max-width:799px){
+    .csr .title-area h3{font-size:3rem;}
+    .with-cont .btn{width:70px;height:70px;}
+    .with-list .with-item.active .txt-wrap{width:100%;padding:20px;}
+    .with-list .with-item{width:auto;}
+    .with-list .with-item:not(:nth-child(1)){margin-left:unset;}
+    .with-cont .control-btns{right:auto;left:0;top:-110px;}
+    .with-list .with-item .txt-wrap{top:50%;bottom:unset;left:50%;transform:translate(-50%, -50%);width:100%;padding:0;}
+    .with-list .with-item:not(:nth-child(1)) .txt-wrap{left:50%;}
+    .with-list{height:350px;margin-top:135px;}
+    .social-cont .social-area img{height:100%;}
+    .social-cont .social-area .txt-wrap p{word-break:break-all;}
+    .eco-cont .eco-area li{flex-direction:column;gap:30px;}
+    .eco-cont .eco-area li+li{padding-top:30px;margin-top:30px;}
+}
+
+/* 다국어 JN */
+
+.with-list .with-item .txt-wrap {
+    width: 610px;
+}
+.eco-cont .eco-area p,
+.social-cont .social-area .txt-wrap p,
+.csr .sub-title-area p,
+.with-list .with-item .txt-wrap .tit,
+.with-list .with-item .txt-wrap p {
+    word-break: break-all;
+}
+@media all and (max-width: 1200px) {
+    .with-list .with-item .txt-wrap {
+        width: 340px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 875px) {
+    .with-list .with-item .txt-wrap{
+        width: 370px;
+    }
+}
+@media all and (max-width:799px){
+    .with-list{
+        height: 375px;
+    }
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOCATION | COMPANY | TCK</title>
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/company.css"><!-- [D] 해당 페이지 전용 스타일 -->
+        <script src="../../assets/js/jquery-3.7.0.min.js"></script>
+        <script src="../../assets/js/ui.js"></script>
+        <script src="../../assets/js/common.js"></script>
+        <!-- [D] 별도 호출 -->
+        <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+        <script src="../../assets/js/swiper-bundle.min.js"></script>
+        <script src="../../assets/js/gsap.min.js"></script>
+        <script src="../../assets/js/ScrollTrigger.min.js"></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZaiUwEGM3BXPduvt-Fg_RlNjHh4V67FE&callback=initMap"></script>
+    </head>
+
+    <body>
+        <div id="wrap" data-lang="en">
+            <!-- skip-navi -->
+            <nav class="skip_navi">
+                <a href="#container">본문 바로가기</a>
+            </nav>
+
+            <!-- import header -->
+            <header id="header" class="sub-header"></header>
+
+            <!-- sub-navi -->
+            <div class="sub-navi">
+                <h2>Who We Are</h2>
+                <div>
+                    <nav class="page-link">
+                        <ul>
+                            <li><a href="overview.html">Company Overview</a></li>
+                            <li><a href="ceo.html">CEO’s Message</a></li>
+                            <li><a href="history.html">History &amp; Recognitions · Awards</a></li>
+                            <li><a href="clients.html">Our Clients</a></li>
+                            <li><a href="ci.html">Our CI</a></li>
+                            <li><a href="location.html" class="active">Our Locations</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <!-- container -->
+            <main id="container" class="container company location">
+                <!-- visual -->
+                <div class="content visual">
+                    <div class="visual-img"><span class="sr-only">메인 이미지 입니다.</span></div>
+                    <div class="inner">
+                        <h3>transcosmos Korea<br>Our Locations</h3>
+                        <p>Introducing the headquarters and centers of transcosmos Korea.<br>We extend a warm welcome to your visit.</p>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="content full">
+                    <div class="inner">
+                        <div class="content-body">
+                            <div class="tab-container tab t-bar">
+                                <div class="pc-tab-menu">
+                                    <ul class="tab-list" role="tablist">
+                                        <li class="tab-item active" role="presentation">
+                                            <a href="#tab1" id="tab1-tab" class="tab-link" role="tab" aria-controls="tab1" aria-selected="true">Headquarters</a>
+                                        </li>
+                                        <li class="tab-item" role="presentation">
+                                            <a href="#tab2" id="tab2-tab" class="tab-link" role="tab" aria-controls="tab2" aria-selected="false">Centers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="m-tab-menu">
+                                    <button class="m-tab-menu-defalut">Headquarters</button>
+                                    <ul>
+                                        <li><button type="button" value="#tab1">Headquarters</button></li>
+                                        <li><button type="button" value="#tab2">Centers</button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div id="tab1" class="tab-contents tab-pane active" role="tabpanel" aria-labelledby="tab1-tab">
+                                        <div class="location-cont scrollMotion">
+                                            <div class="title-area m-tit01">
+                                                <h4>Introduction to the Headquarters</h4>
+                                                <p>The Headquarters of transcosmos Korea is located in Yeouido, the bustling heart of Seoul.</p>
+                                            </div>
+                                            <div class="location-area m-cont01">
+                                                <!-- 구글지도 영역 -->
+                                                <div id="map" class="map"></div>
+                                                <!-- //구글지도 영역 -->
+                                                <div class="info">
+                                                    <ul>
+                                                        <li class="address">
+                                                            <span>Address</span>
+                                                            <p>transcosmos Korea Inc., 35F, 24, Yeoui-daero &#40;Yeouido-dong, FKI Tower&#41;, Yeongdeungpo-gu, Seoul</p>
+                                                        </li>
+                                                        <li class="contact">
+                                                            <span>Contact</span>
+                                                            <p>T. &#40;+82&#41; 2-489-7505 / F. &#40;+82&#41; 2-790-8272</p>
+                                                        </li>
+                                                        <li class="traffic">
+                                                            <span>Public <br>Transportation</span>
+                                                            <div class="traffic-list">
+                                                                <p>Subway Line 5 or Line 9, approximately 7 minutes on foot from Yeouido Station Exit 2</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0)" class="btn b-round def">Directions</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="preview-cont scrollMotion">
+                                            <div class="inner">
+                                                <div class="preview-info m-tit00">
+                                                    <h5>HEAD OFFICE<br>PREVIEW</h5>
+                                                    <p>
+                                                        At transcosmos Korea, we persistently seek to enhance the workplace environment for our employees through thoughtful deliberation and sufficient investment.
+                                                    </p>
+                                                </div>
+                                                <div class="swiper preview-slide">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="../../assets/images/tmp_company01.png" alt="트랜스코스모스코리아 사무실 첫번째 이미지">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="트랜스코스모스코리아 사무실 두번째 이미지">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="../../assets/images/tmp_company01.png" alt="트랜스코스모스코리아 사무실 세번째 이미지">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="트랜스코스모스코리아 사무실 네번째 이미지">
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-box t-gray">
+                                                        <div class="preview-pagination"></div>
+                                                        <div class="active-txt">
+                                                            <span class="num">01</span>
+                                                        </div>
+                                                        <a href="javascript:void(0)" class="play-btn pause" aria-label="정지버튼">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab2" class="tab-contents tab-pane" role="tabpanel" aria-labelledby="tab2-tab">
+                                        <div class="location-cont scrollMotion">
+                                            <div class="title-area m-tit00">
+                                                <h4>Introduction to the Centers</h4>
+                                                <p>We are delighted to introduce our centers across the nation.</p>
+                                            </div>
+                                            <!-- 230616 구본용 : 내용 수급 중입니다. -->
+                                            <div class="location-area center-area">
+                                                <div class="center-group">
+                                                    <div class="center">
+                                                        <h5>남영센터</h5>
+                                                        <button class="btn t-detail t-toright">
+                                                            <span>View Details</span>
+                                                            <i class="icon"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="column-right">
+                                                        <!-- 구글지도 영역 -->
+                                                        <div id="map2" class="map"></div>
+                                                        <!-- //구글지도 영역 -->
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li class="address">
+                                                                    <span>Address</span>
+                                                                    <p>서울특별시 용산구 원효로 90길11업무동 &#40;용산더프라임&#41;</p>
+                                                                </li>
+                                                                <li class="traffic">
+                                                                    <span>Public <br>Transportation</span>
+                                                                    <div class="traffic-list">
+                                                                        <p>지하철 1호선 남영역 1번출구 도보 5분내외</p>
+                                                                        <p>지하철 4호선 숙대입구역 7번출구 도보 10분내외</p>
+                                                                        <p>지하철 6호선 효창공원역 2번출구 도보 15분내외</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:void(0)" class="btn b-round def">Directions</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="center-group">
+                                                    <div class="center">
+                                                        <h5>잠실센터</h5>
+                                                        <button class="btn t-detail t-toright">
+                                                            <span>View Details</span>
+                                                            <i class="icon"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="column-right">
+                                                        <!-- 구글지도 영역 -->
+                                                        <div id="map3" class="map"></div>
+                                                        <!-- //구글지도 영역 -->
+                                                        <div class="info">
+                                                            <ul>
+                                                                <li class="address">
+                                                                    <span>Address</span>
+                                                                    <p>서울특별시 송파구 올림픽로 35길 123, 향군타워</p>
+                                                                </li>
+                                                                <li class="traffic">
+                                                                    <span>Public <br>Transportation</span>
+                                                                    <div class="traffic-list">
+                                                                        <p>지하철 2호선 / 8호선 잠실역 7번 출구 도보 5분</p>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- //230616 구본용 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //content -->
+            </main>
+            
+            <!-- popup -->
+            <div class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <div class="popup-info">
+                            <h5>OFFICE<br>PREVIEW</h5>
+                            <p>
+                                At transcosmos Korea, we persistently seek to enhance the workplace environment for our employees through thoughtful deliberation and sufficient investment.
+                            </p>
+                        </div>
+                        <div class="swiper popup-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../../assets/images/tmp_company01.png" alt="트랜스코스모스코리아 사무실 첫번째 이미지">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="트랜스코스모스코리아 사무실 두번째 이미지">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../../assets/images/tmp_company01.png" alt="트랜스코스모스코리아 사무실 세번째 이미지">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="트랜스코스모스코리아 사무실 네번째 이미지">
+                                </div>
+                            </div>
+                            <div class="control-box t-gray">
+                                <div class="popup-pagination"></div>
+                                <div class="active-txt">
+                                    <span class="num">01</span>
+                                </div>
+                                <a href="javascript:void(0)" class="play-btn pause" data-target="popupBtn" aria-label="정지버튼">
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-r">
+                        <a href="#" class="btn-layerClose"><span class="sr-only">Close</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="dim-layer"></div>
+
+            <!-- import footer -->
+            <footer id="footer" class="footer"></footer>
+        </div>
+        <script>
+            // 로딩 시 스크롤 초기화
+            ScrollTrigger.clearScrollMemory();
+            window.history.scrollRestoration = "manual";
+            document.addEventListener("DOMContentLoaded", () => {
+                bgMotion();
+                scrollMotionTrigger();
+                // mapMotion();
+                tabMotion();
+                preview();
+                popup();
+            });
+            function scrollMotionTrigger() {
+                if ($(".scrollMotion").length > 0 || $(".scrollMotion2").length > 0) {
+                    $(".scrollMotion:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "top 83%",
+                                end: "bottom center",
+                                toggleClass: { targets: $(".scrollMotion:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                onUpdate: (self) => {
+                                    // console.log(self);
+                                },
+                                onEnter: mapMotion,
+                            },
+                        });
+                    });
+
+                    $(".scrollMotion2:visible").each(function (q) {
+                        gsap.to($(this), {
+                            scrollTrigger: {
+                                trigger: $(this),
+                                start: "center 100%",
+                                end: "bottom top",
+                                toggleClass: { targets: $(".scrollMotion2:visible").eq(q), className: "sMotion" },
+                                once: true,
+                                // markers: true,
+                            },
+                        });
+                    });
+                }
+            }
+
+            function tabMotion() {
+                let tabItem = document.querySelectorAll(".tab-item");
+                tabItem.forEach((tab, idx) => {
+                    tab.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        scrollMotionTrigger();
+                        // mapMotion();
+                    });
+                });
+            }
+
+            function bgMotion() {
+                let bgMotion = document.querySelector(".visual-img");
+                gsap.to(bgMotion, {
+                    duration: 1.5,
+                    scale: 1,
+                });
+
+                let content = document.querySelectorAll(".content");
+                let subTit = document.querySelector(".sub-title-area h5");
+                let subTxt = document.querySelector(".sub-title-area p");
+
+                const tl01 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: content[1],
+                        start: "5% top",
+                        end: "bottom center",
+                        toggleActions: "play none none none",
+                    },
+                });
+            }
+
+            function mapMotion() {
+                const mapList = document.querySelectorAll(".center-group");
+                mapList.forEach((element, idx) => {
+                    const tl01 = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: element,
+                            start: "-5% 80%",
+                            end: "5% 50%",
+                            // markers: true,
+                            toggleActions: "play none none none",
+                        },
+                    });
+                    tl01.to(
+                        element,
+                        {
+                            ease: "easeIn",
+                            opacity: 1,
+                            y: 0,
+                        }
+                    );
+                });
+            }
+
+            function preview() {
+                // console.log(tabItems);
+
+                //본사 미리보기 슬라이드
+                let previewSlide = new Swiper(".preview-slide", {
+                    loop: true,
+                    autoplay: {
+                    	delay: 2000,
+                    	disableOnInteraction: false,
+                    },
+                    spaceBetween: 30,
+                    effect: "fade",
+                    pagination: {
+                        el: ".preview-pagination",
+                        clickable: true,
+                    },
+                    initialSlide: 0,
+                    on: {
+                        slideChange: function () {
+                            let currentIndex = this.realIndex;
+                            if (this.loop) {
+                                if (currentIndex < 0) {
+                                    currentIndex = this.slides.length - 1;
+                                } else if (currentIndex >= this.slides.length) {
+                                    currentIndex = 0;
+                                }
+                            }
+                            let textNum = document.querySelector(".preview-slide .active-txt .num");
+                            textNum.textContent = `0${currentIndex + 1}`;
+                        },
+                    },
+                });
+                $(".preview-slide .play-btn").click(function () {
+                    if ($(this).hasClass("pause")) {
+                        previewSlide.autoplay.stop();
+                        $(this).removeClass("pause").addClass("play");
+                    } else {
+                        previewSlide.autoplay.start();
+                        $(this).removeClass("play").addClass("pause");
+                    }
+                });
+            }
+
+            function popup() {
+                //팝업 슬라이드
+                let popupSlide = new Swiper(".popup-slide", {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    observer: true,
+                    observeParents: true,
+                    spaceBetween: 30,
+                    effect: "fade",
+                    pagination: {
+                        el: ".popup-pagination",
+                        clickable: true,
+                    },
+                    initialSlide: 0,
+                    on: {
+                        slideChange: function () {
+                            let currentIndex = this.realIndex;
+                            if (this.loop) {
+                                if (currentIndex < 0) {
+                                    currentIndex = this.slides.length - 1;
+                                } else if (currentIndex >= this.slides.length) {
+                                    currentIndex = 0;
+                                }
+                            }
+                            let textNum = document.querySelector(".popup-slide .active-txt .num");
+                            textNum.textContent = `0${currentIndex + 1}`;
+                        },
+                    },
+                });
+
+                $(".popup-slide .play-btn").click(function () {
+                    const target = $(this).data("target");
+                    if (target == "popupBtn") {
+                        if ($(this).hasClass("pause")) {
+                            popupSlide.autoplay.stop();
+                            $(this).removeClass("pause").addClass("play");
+                        } else {
+                            popupSlide.autoplay.start();
+                            $(this).removeClass("play").addClass("pause");
+                        }
+                    } else {
+                        if ($(this).hasClass("pause")) {
+                            popupSlide.autoplay.stop();
+                            $(this).removeClass("pause").addClass("play");
+                        } else {
+                            popupSlide.autoplay.start();
+                            $(this).removeClass("play").addClass("pause");
+                        }
+                    }
+                });
+
+                $(".center .t-detail").click(function (e) {
+                    e.preventDefault();
+                    $(".pop-layer").slideDown(300).addClass("active");
+                    $(".dim-layer").fadeIn(200);
+                    $("body").addClass("scroll-lock");
+                    popupSlide.slideTo(0);
+                });
+
+                $(".pop-layer .btn-layerClose").click(function (e) {
+                    e.preventDefault();
+                    $(".pop-layer").slideUp(300).removeClass("active");
+                    $(".dim-layer").fadeOut(500);
+                    $("body").removeClass("scroll-lock");
+                });
+            }
+
+            // 구글지도 api
+            window.initMap = function () {
+                // 본사
+                function initMap1() {
+                    const latLng1 = { lat: 37.5400456, lng: 126.9921017 }; //임시 경도,위도
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 12,
+                        center: latLng1,
+                    });
+                    new google.maps.Marker({
+                        position: latLng1,
+                        map,
+                    });
+                }
+                // 남영센터
+                function initMap2() {
+                    const latLng2 = { lat: 37.5125585, lng: 127.1025353 }; //임시 경도,위도
+                    const map = new google.maps.Map(document.getElementById("map2"), {
+                        zoom: 12,
+                        center: latLng2,
+                    });
+                    new google.maps.Marker({
+                        position: latLng2,
+                        map,
+                    });
+                }
+                // 잠실센터
+                function initMap3() {
+                    const latLng3 = { lat: 37.5173108, lng: 126.9033793 }; //임시 경도,위도
+                    const map = new google.maps.Map(document.getElementById("map3"), {
+                        zoom: 12,
+                        center: latLng3,
+                    });
+
+                    new google.maps.Marker({
+                        position: latLng3,
+                        map,
+                    });
+                }
+                initMap1();
+                initMap2();
+                initMap3();
+            };
+        </script>
+    </body>
+</html>

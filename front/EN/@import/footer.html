@@ -1,0 +1,117 @@
+<!-- <footer id="footer" class="footer"> -->
+<div class="floating-btns">
+	<!-- <div class="chat">
+		<button class="btn kakao">
+			<span class="sr-only">카카오톡</span>
+		</button>
+		<button class="btn chatbot">
+			<span class="sr-only">챗봇</span>
+		</button>
+	</div>
+	<button class="btn toggle">
+		<span class="sr-only">더보기</span>
+	</button> -->
+	<button class="btn top">
+		<span class="sr-only">상단으로</span>
+        <img src="../../assets/images/btn_floating_top.png" alt="위 화살표" />
+    </button>
+</div>
+<div class="info-area">
+    <div class="inner">
+        <div class="company-info">
+            <div class="info-box">
+                <span><strong>Chief Executive Officer :</strong> Hiroyuki Tani</span>
+            </div>
+            <div class="info-box">
+                <span><strong>Corporate Headquarters :</strong> 24 Yeouidaero, Yeongdeungpo-gu, Seoul</span>
+                <span><strong>FAX :</strong> &#40;02&#41; 790-8272</span>
+            </div>
+            <div class="info-box">
+                <span><strong>HR Inquiries :</strong> 1899-1632</span>
+                <span><strong>Sales Inquiries :</strong> &#40;02&#41; 489-7505</span>
+                <span><strong>Recruitment Inquiries :</strong> &#40;02&#41; 877-6817</span>
+            </div>
+            <div class="info-box">
+                <span><strong>Financial Supervisory Service Designated Loan Product Sales Agent Registration Number : 20-00000713</strong></span>
+            </div>
+        </div>
+        <div class="drop-down-group">
+            <!-- <div class="drop-down support">
+                <button type="button" class="dd-btn" aria-controls="dropdwsupoort" aria-haspopup="listbox" aria-expanded="false">고객지원</button>
+                <div id="dropdwsupoort" class="drop-menu">
+                    <ul>
+                        <li><a href="../../html/ask/customer.html">사업문의</a></li>
+                        <li><a href="../../html/ask/personal01.html">인사문의</a></li>
+                        <li><a href="../../html/ask/staff01.html">직원의 소리</a></li>
+                        <li><a href="../../html/ask/redep.html">전환배치 신청</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="drop-down global">
+                <button type="button" class="dd-btn" aria-controls="dropdwglobal" aria-haspopup="listbox" aria-expanded="false">Our Global Presence</button>
+                <div id="dropdwglobal" class="drop-menu">
+					<ul>
+						<li><a href="https://www.trans-cosmos.co.jp/english/" target="_blank">JAPAN</a></li>
+						<li><a href="https://www.transcosmos.net/" target="_blank">USA</a></li>
+						<li><a href="https://transcosmos-cn.com/" target="_blank">CHINA</a></li>
+						<li><a href="https://www.trans-cosmos.co.id/" target="_blank">INDONESIA</a></li>
+						<li><a href="https://www.transcosmos.com.ph/" target="_blank">PHILIPPINES</a></li>
+						<li><a href="https://www.transcosmos.com.ph/" target="_blank">MALAYSIA</a></li>
+					</ul>
+                </div>
+            </div>
+            <div class="drop-down sns">
+                <button type="button" class="dd-btn" aria-controls="dropdwSns" aria-haspopup="listbox" aria-expanded="false">Social Media Channels</button>
+                <div id="dropdwSns" class="drop-menu">
+                    <ul>
+                        <li><a href="https://blog.naver.com/transcosmos" target="_blank">NAVER BLOG</a></li>
+                        <li><a href="https://m.post.naver.com/my.nhn?memberNo=2487570" target="_blank">NAVER POST</a></li>
+                        <li><a href="https://www.instagram.com/transcosmoskorea/" target="_blank">INSTAGRAM</a></li>
+                        <li><a href="https://www.facebook.com/transcosmoskorea.official/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank">FACEBOOK</a></li> 
+                        <li><a href="https://www.youtube.com/channel/UCaEzYUr7plyEtJgj1ITYhqQ" target="_blank">YOUTUBE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="corp-area">
+    <div class="inner">
+        <nav class="fnb">
+            <ul>
+                <li><a href="../../html/etc/privacy.html"><strong>Privacy Policy</strong></a></li>
+                <li><a href="../../html/etc/video.html">Policy on the Operation and Management of Video Information Devices</a></li>
+                <li><a href="javascript:void(0);" onclick="noneCollectOpen();">Prohibition of Unauthorized Collection of Email Addresses</a></li>
+                <li><a href="https://www.tckedu.co.kr/" target="_blank">Lifelong Learning Institute</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Global Digital Transformation Partner <br class="mo-visible">&copy; TRANSCOSMOS KOREA Inc. All rights reserved</p>
+    </div>
+</div>
+<!-- 이메일무단수집거부 팝업 컨텐츠 -->
+<div class="popup-container pop-noneCollect" style="display: none;">
+    <div class="popup-content popup-content-2">
+        <div class="txt-box">
+            <span class="tit">Prohibition of Unauthorized Collection of Email Addresses</span>
+            <p>
+                The email addresses posted on this website are strictly protected against unauthorized collection using email collection programs or any other technological measures. Engaging in such activities is a violation of the Act on Promotion of Information and Communications Network Utilization and Information Protection and may lead to legal consequences.
+            </p>
+        </div>
+        <div class="btn-r">
+            <a href="javascript:void(0);" class="btn-layerClose" onclick="noneCollectClose();"><span class="sr-only">Close</span></a>
+        </div>
+    </div>
+</div>
+<!-- </footer> -->
+<script>
+	function noneCollectOpen() {
+		// 이메일무단수집거부 팝업 호출
+		$('.pop-noneCollect').fadeIn();
+		$('body').addClass('scroll-lock');
+	}
+
+	function noneCollectClose() {
+		$('.pop-noneCollect').fadeOut();
+		$('body').removeClass('scroll-lock');
+	}
+</script>
